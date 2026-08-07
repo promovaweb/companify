@@ -8,7 +8,7 @@
 
 ## Lacunas frente à estratégia
 
-| Papel que falta | O que fica bloqueado sem ele | Urgência (agora / próximo trimestre / depois) |
+| Papel que falta | O que fica impedido sem ele | Urgência (agora / próximo trimestre / depois) |
 | --- | --- | --- |
 | | | |
 
@@ -28,6 +28,6 @@
 
 ## Regras de aceite
 
-- [ ] Cada papel da sequência está ligado a um bloqueio real de execução, não a um cargo "que toda empresa tem".
+- [ ] Cada papel da sequência está ligado a uma entrega real que fica impedida sem ele, não a um cargo "que toda empresa tem".
 - [ ] A sequência respeita o orçamento disponível registrado em `company/finance.md`, quando existir.
 - [ ] Toda dependência crítica de uma única pessoa tem mitigação registrada.

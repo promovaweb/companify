@@ -28,7 +28,7 @@ para registrar lacunas, ordem de contratação e dependência de pessoas-chave.
 1. Descrever a equipe atual: competências, papéis e capacidade real.
 2. Comparar com a equipe necessária para executar `company/strategy.md` e o
    roadmap das demais áreas.
-3. Identificar lacunas e papéis críticos, priorizando o que bloqueia
+3. Identificar lacunas e papéis críticos, priorizando o que impede
    execução no curto prazo.
 4. Definir a sequência de contratação, condicionada ao orçamento em
    `company/finance.md` quando disponível.
