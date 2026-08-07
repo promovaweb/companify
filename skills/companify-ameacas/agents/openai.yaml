@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ameaças Empresariais"
+  short_description: "Ameaças por categoria, mitigação e contingência"
+  default_prompt: "Use $companify-ameacas para estruturar company/ameacas.md."

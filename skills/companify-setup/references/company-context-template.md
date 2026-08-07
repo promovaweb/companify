@@ -27,7 +27,7 @@ Problema:
 Quem possui o problema:
 Frequência:
 Intensidade:
-Evidências:
+Comprovações:
 
 ## Solução
 
@@ -64,7 +64,7 @@ Clientes:
 Receita:
 Crescimento:
 Retenção:
-Outras evidências:
+Outras comprovações:
 
 ## Aquisição
 
@@ -120,9 +120,9 @@ Personalidade:
 ...
 ```
 
-Preencha apenas o que houver fato, evidência ou declaração do usuário
+Preencha apenas o que houver fato, comprovação ou declaração do usuário
 confirmada. Um campo sem informação permanece em branco com a pergunta
-correspondente registrada em `.companify/interview.md` — não preencha com
+correspondente registrada em `.companify/interview.md`: não preencha com
 suposição para "completar" o documento.
 
 Quando a seção **Brandfy** existir no Company Context mas os arquivos de

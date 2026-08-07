@@ -12,13 +12,16 @@ description: Transforma estratégia em capacidade operacional. Use para estrutur
 - **Fontes de verdade:** ler `company/product.md`, `company/technology.md` e
   `company/finance.md` quando já produzidos.
 - **Escopo e idempotência:** não redesenhar um processo já validado sem
-  evidência de que ele deixou de funcionar.
+  comprovação de que ele deixou de funcionar.
 - **Validação:** cada processo crítico tem um dono, uma capacidade estimada
   e um sinal observável de gargalo.
 - **Resumo final:** informar processos críticos, gargalos identificados e o
   que deve ser automatizado versus permanecer humano.
 
 ## Fluxo
+
+Use a [checklist de operação](references/operations-checklist.md) para
+mapear o fluxo de entrega, os processos críticos e os fornecedores.
 
 1. Mapear como a empresa entrega sua promessa hoje, do pedido à entrega.
 2. Identificar processos críticos, fornecedores, parceiros e recursos
@@ -38,6 +41,6 @@ description: Transforma estratégia em capacidade operacional. Use para estrutur
 
 A pergunta central é: conseguimos entregar isso repetidamente, não apenas uma
 vez? Um processo que funciona para o décimo cliente pode quebrar no
-centésimo — testar cada processo contra o volume que o CRO e o CMO estão
+centésimo: testar cada processo contra o volume que o CRO e o CMO estão
 projetando, não contra o volume atual. Automação sem processo estável documentado
 apenas move o gargalo, não o resolve.

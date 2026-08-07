@@ -5,7 +5,7 @@ evoluir a empresa por trás de uma marca, produto ou projeto. O Brandfy
 responde pela construção e governança da **marca**; o Companify responde pela
 construção e governança do **negócio**. Juntas, as duas bibliotecas conduzem
 uma ideia, projeto, produto, startup ou empresa existente até um plano de
-negócio vivo, sustentado por um conselho executivo virtual colaborativo — não
+negócio vivo, sustentado por um conselho executivo virtual colaborativo: não
 por prompts que apenas simulam cargos.
 
 ## Instalação
@@ -23,9 +23,9 @@ conforme o agente escolhido. `$companify-setup` prepara `.companify/`,
 `$companify-builder` coordena a esteira completa: setup, contexto, entrevista,
 mercado, modelo de negócio, conselho executivo, board, plano de negócio e
 auditoria. Uma empresa existente pode pular etapas já suficientemente
-documentadas, desde que a evidência justifique o salto. As skills
-especializadas também funcionam de forma direta — por exemplo, `$companify-cfo`
-para revisar apenas as finanças ou `$companify-board` para debater uma decisão
+documentadas, desde que a comprovação justifique o salto. As skills
+especializadas também funcionam de forma direta: por exemplo, `$companify-cfo`
+para revisar apenas as finanças ou `$companify-board` para debater uma escolha
 complexa.
 
 | Skill | Responsabilidade |
@@ -42,10 +42,10 @@ complexa.
 | `companify-cfo` | Modelo financeiro, unit economics, cenários e viabilidade. |
 | `companify-coo` | Capacidade operacional, processos críticos e execução. |
 | `companify-chro` | Desenho organizacional, papéis críticos e sequência de contratação. |
-| `companify-risk` | Riscos empresariais por categoria, com mitigação e contingência. |
+| `companify-ameacas` | Ameaças empresariais por categoria, com mitigação e contingência. |
 | `companify-board` | Conselho executivo: confronta análises, resolve conflitos e prioriza. |
 | `companify-business-plan` | Consolida o plano de negócio como narrativa coerente. |
-| `companify-audit` | Revisão final de consistência, evidência e prontidão do plano. |
+| `companify-audit` | Revisão final de consistência, comprovação e prontidão do plano. |
 | `companify-builder` | Coordena a esteira completa e os quatro gates de qualidade. |
 
 ## Relação com o Brandfy
@@ -53,17 +53,17 @@ complexa.
 O Companify consome os artefatos já aprovados pelo Brandfy sempre que
 disponíveis (`.brandfy/config.yaml`, `.brandfy/brief.md`, `brand/strategy.md`,
 `brand/voice.md`, `brand/manual.md`) e nunca os reescreve silenciosamente.
-Quando uma análise empresarial entra em conflito com uma decisão de marca — por
-exemplo, uma hipótese de pricing que pressiona um posicionamento premium — o
-Companify registra a tensão em `.companify/decisions.md` e encaminha a mudança
-à skill `brandfy-estrategia` correspondente, em vez de resolver a questão
-sozinho.
+Quando uma análise empresarial entra em conflito com uma escolha de marca
+(por exemplo, uma hipótese de pricing que pressiona um posicionamento
+premium), o Companify registra a tensão em `.companify/escolhas.md` e
+encaminha a mudança à skill `brandfy-estrategia` correspondente, em vez de
+resolver a questão sozinho.
 
 ## Estado do projeto
 
 Este repositório está na primeira versão publicada, com as 17 skills do MVP
-descrito em `docs/specification.md`. Extensões futuras — como
-`companify-fundraising`, `companify-saas` ou `companify-compliance` — devem
+descrito em `docs/specification.md`. Extensões futuras, como
+`companify-fundraising`, `companify-saas` ou `companify-compliance`, devem
 funcionar como especializações que consultam o mesmo Company Context, sem
 substituir o conselho principal.
 

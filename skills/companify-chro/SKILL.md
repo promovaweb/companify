@@ -13,7 +13,7 @@ description: Desenha a arquitetura humana necessária ao negócio. Use para estr
   `company/technology.md` e `company/finance.md` (orçamento disponível para
   contratação) quando já produzidos.
 - **Escopo e idempotência:** não produzir RH corporativo genérico
-  (políticas, benefícios padrão) — o foco é a capacidade humana que a
+  (políticas, benefícios padrão): o foco é a capacidade humana que a
   estratégia exige.
 - **Validação:** cada papel crítico liga-se a uma capacidade que falta hoje,
   não a um cargo "que toda empresa tem".
@@ -21,6 +21,9 @@ description: Desenha a arquitetura humana necessária ao negócio. Use para estr
   dependência de pessoas-chave.
 
 ## Fluxo
+
+Use o [template de sequência de contratação](references/hiring-sequence-template.md)
+para registrar lacunas, ordem de contratação e dependência de pessoas-chave.
 
 1. Descrever a equipe atual: competências, papéis e capacidade real.
 2. Comparar com a equipe necessária para executar `company/strategy.md` e o
@@ -32,7 +35,7 @@ description: Desenha a arquitetura humana necessária ao negócio. Use para estr
 5. Registrar competências essenciais por papel e a dependência de
    pessoas-chave (o que acontece se essa pessoa sair amanhã).
 6. Descrever desenho organizacional, liderança, cultura e incentivos apenas
-   na medida em que afetam a capacidade de execução — não como exercício
+   quando afetam diretamente a capacidade de execução, não como exercício
    institucional isolado.
 7. Salvar em `company/people.md`: equipe atual, equipe necessária, lacunas,
    papéis críticos, sequência de contratação, competências essenciais,
@@ -41,7 +44,7 @@ description: Desenha a arquitetura humana necessária ao negócio. Use para estr
 ## Raciocínio do especialista
 
 A pergunta central é: temos capacidade humana para executar o que a
-estratégia exige? Uma lacuna de contratação não registrada é um risco
-operacional disfarçado de otimismo. Priorizar papéis por bloqueio real —
-"sem essa contratação, qual entrega para?" — em vez de por prestígio do
-cargo.
+estratégia exige? Uma lacuna de contratação não registrada é uma exposição
+operacional disfarçada de otimismo. Priorizar papéis pela trava real de
+execução: "sem essa contratação, qual entrega para?", em vez de por
+prestígio do cargo.

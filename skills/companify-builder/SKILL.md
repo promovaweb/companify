@@ -15,12 +15,12 @@ description: Coordena a construção ou revisão completa do plano de negócio. 
   [gates.md](references/gates.md).
 - **Escopo e idempotência:** retomar o estado registrado, preservar
   artefatos aprovados. Uma empresa existente pode pular etapas já
-  suficientemente documentadas — a evidência do que já existe justifica o
+  suficientemente documentadas: a comprovação do que já existe justifica o
   salto.
 - **Validação:** não avançar de um gate ao seguinte com item pendente sem
   justificativa registrada.
 - **Resumo final:** registrar artefatos produzidos, gates concluídos,
-  decisões tomadas, evidências usadas e pendências.
+  escolhas tomadas, comprovações usadas e pendências.
 
 ## Esteira
 
@@ -36,10 +36,10 @@ description: Coordena a construção ou revisão completa do plano de negócio. 
 8. Acionar os nove especialistas sobre o mesmo Company Context:
    `$companify-ceo`, `$companify-cpo`, `$companify-cto`, `$companify-cmo`,
    `$companify-cro`, `$companify-cfo`, `$companify-coo`, `$companify-chro` e
-   `$companify-risk`. Eles não dependem sequencialmente uns dos outros, mas
+   `$companify-ameacas`. Eles não dependem sequencialmente uns dos outros, mas
    cada um lê os artefatos que os demais já publicaram em `company/`.
 9. Usar `$companify-board` para confrontar as análises, resolver conflitos e
-   registrar decisões.
+   registrar escolhas.
 10. Confirmar o **Executive Alignment Gate**.
 11. Usar `$companify-business-plan` para consolidar `company/business-plan.md`
     e `company/roadmap.md`.
@@ -51,7 +51,7 @@ o diagrama da esteira.
 
 ## Raciocínio do especialista
 
-O builder não substitui o raciocínio de cada especialista — orquestra a
+O builder não substitui o raciocínio de cada especialista: orquestra a
 sequência, garante que nenhuma etapa avance sobre lacuna não reconhecida e
 mantém os quatro gates como pontos de honestidade, não como burocracia. Uma
 empresa existente com documentação forte deve avançar rápido; uma ideia em

@@ -10,11 +10,12 @@ Produto, mercado, marketing, tecnologia, finanças e operação contam a mesma
 história? Um ICP descrito em `market.md` que não aparece em `product.md` nem
 em `marketing.md` é inconsistência, não detalhe.
 
-## Evidência
+## Comprovação
 
-Existem alegações sem evidência, declaração do usuário ou premissa
+Existem alegações sem comprovação, declaração do usuário ou premissa
 explícita? Toda frase categórica ("o mercado quer X") precisa de uma dessas
-três origens rastreável em `.companify/evidence.md` ou no próprio documento.
+três origens rastreável em `.companify/comprovacoes.md` ou no próprio
+documento.
 
 ## Hipóteses
 
@@ -58,14 +59,14 @@ não identificada?
 
 ## Marca
 
-O plano contradiz decisões aprovadas pelo Brandfy? Se sim, existe uma entrada
-em `.companify/decisions.md` registrando a tensão e o encaminhamento à skill
+O plano contradiz escolhas aprovadas pelo Brandfy? Se sim, existe uma entrada
+em `.companify/escolhas.md` registrando a tensão e o encaminhamento à skill
 `brandfy-*` correspondente?
 
-## Riscos
+## Ameaças
 
-Os riscos críticos possuem mitigação e plano de contingência em
-`company/risks.md`?
+As ameaças críticas possuem mitigação e plano de contingência em
+`company/ameacas.md`?
 
 ## Resultado
 
@@ -77,6 +78,6 @@ PASSED WITH PENDING ITEMS
 FAILED
 ```
 
-Classificar cada achado por impacto, probabilidade e reversibilidade — a
-mesma lente de auditoria usada pelo Brandfy — e diferenciar impedimento de
+Classificar cada achado por impacto, probabilidade e reversibilidade, a
+mesma lente de auditoria usada pelo Brandfy, e diferenciar impedimento de
 publicação, correção necessária, melhoria recomendada e observação.

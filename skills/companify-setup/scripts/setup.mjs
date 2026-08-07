@@ -53,7 +53,7 @@ Problema:
 Quem possui o problema:
 Frequência:
 Intensidade:
-Evidências:
+Comprovações:
 
 ## Solução
 
@@ -90,7 +90,7 @@ Clientes:
 Receita:
 Crescimento:
 Retenção:
-Outras evidências:
+Outras comprovações:
 
 ## Aquisição
 
@@ -168,16 +168,16 @@ Use o formato \`ASS-NNN\` descrito em
 ainda registrada.
 `;
 
-const DEFAULT_DECISIONS = `# Decisões
+const DEFAULT_ESCOLHAS = `# Escolhas
 
-Use o formato \`DEC-NNN\` descrito em
+Use o formato \`ESC-NNN\` descrito em
 \`companify-board/references/decision-record.md\`. Nenhuma entrada ainda
 registrada.
 `;
 
-const DEFAULT_EVIDENCE = `# Evidências
+const DEFAULT_COMPROVACOES = `# Comprovações
 
-Registre fonte, data e o que a evidência sustenta. Nenhuma entrada ainda
+Registre fonte, data e o que a comprovação sustenta. Nenhuma entrada ainda
 registrada.
 `;
 
@@ -187,10 +187,10 @@ Use a árvore descrita em \`companify-cfo/references/metrics-tree.md\`,
 adaptada ao modelo de negócio real. Nenhuma métrica ainda registrada.
 `;
 
-const DEFAULT_RISKS = `# Riscos
+const DEFAULT_AMEACAS = `# Ameaças
 
-Use as categorias e o formato descritos em \`companify-risk/SKILL.md\`.
-Nenhum risco ainda registrado.
+Use as categorias e o formato descritos em \`companify-ameacas/SKILL.md\`.
+Nenhuma ameaça ainda registrada.
 `;
 
 const DEFAULT_COMPANY_README = `# Company
@@ -212,7 +212,7 @@ de responsabilidades.
 | finance.md | pendente |
 | operations.md | pendente |
 | people.md | pendente |
-| risks.md | pendente |
+| ameacas.md | pendente |
 | roadmap.md | pendente |
 | business-plan.md | pendente |
 `;
@@ -224,10 +224,10 @@ const FILES = [
   [".companify/company-context.md", DEFAULT_COMPANY_CONTEXT],
   [".companify/interview.md", DEFAULT_INTERVIEW],
   [".companify/assumptions.md", DEFAULT_ASSUMPTIONS],
-  [".companify/decisions.md", DEFAULT_DECISIONS],
-  [".companify/evidence.md", DEFAULT_EVIDENCE],
+  [".companify/escolhas.md", DEFAULT_ESCOLHAS],
+  [".companify/comprovacoes.md", DEFAULT_COMPROVACOES],
   [".companify/metrics.md", DEFAULT_METRICS],
-  [".companify/risks.md", DEFAULT_RISKS],
+  [".companify/ameacas.md", DEFAULT_AMEACAS],
   ["company/README.md", DEFAULT_COMPANY_README],
 ];
 

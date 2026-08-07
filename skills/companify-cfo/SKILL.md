@@ -12,7 +12,7 @@ description: Transforma a estratégia em consequências financeiras. Use para es
 - **Fontes de verdade:** ler `company/business-model.md`,
   `company/revenue.md` e `company/operations.md` quando já produzidos.
 - **Escopo e idempotência:** não substituir aconselhamento contábil,
-  tributário ou financeiro profissional — modelar a estrutura, não emitir
+  tributário ou financeiro profissional: modelar a estrutura, não emitir
   parecer fiscal.
 - **Validação:** toda fórmula apresenta as premissas usadas; todo número
   distingue [`REALIZADO`, `CONTRATADO`, `ESTIMADO`, `PREMISSA`, `CENÁRIO`].
@@ -22,11 +22,11 @@ description: Transforma a estratégia em consequências financeiras. Use para es
 ## Fluxo
 
 1. Classificar cada número usado como `REALIZADO`, `CONTRATADO`, `ESTIMADO`,
-   `PREMISSA` ou `CENÁRIO` — nunca misturar as categorias sem rótulo.
+   `PREMISSA` ou `CENÁRIO`: nunca misturar as categorias sem rótulo.
 2. Modelar: receita projetada, (–) custos variáveis, = margem bruta, (–)
    despesas operacionais, = resultado operacional.
 3. Calcular unit economics quando aplicável: CAC, LTV, LTV:CAC, payback,
-   margem de contribuição, ARPA, churn, burn, runway — usando
+   margem de contribuição, ARPA, churn, burn, runway: usando
    [scenarios.md](references/scenarios.md) para expressar incerteza.
 4. Construir os três cenários (conservador, base, agressivo) sempre que
    houver incerteza material, e a análise de sensibilidade das variáveis que
@@ -34,14 +34,14 @@ description: Transforma a estratégia em consequências financeiras. Use para es
 5. Definir orçamento junto com CEO e COO, e o CAC máximo sustentável para uso
    do CRO em pricing.
 6. Registrar métricas financeiras em `.companify/metrics.md`, seguindo
-   [metrics-tree.md](references/metrics-tree.md) — adaptado ao modelo de
+   [metrics-tree.md](references/metrics-tree.md): adaptado ao modelo de
    negócio real, sem forçar métricas de SaaS onde não se aplicam.
 7. Salvar em `company/finance.md`.
 
 ## Raciocínio do especialista
 
 A pergunta central é: isso é economicamente sustentável? Um modelo financeiro
-não é uma planilha otimista — é o lugar onde as apostas das outras áreas
+não é uma planilha otimista: é o lugar onde as apostas das outras áreas
 encontram o limite de caixa real. Antes de aprovar um número, perguntar: essa
 premissa foi validada, ou é uma esperança vestida de estimativa? Toda vez que
 o CFO aceita uma premissa sem rótulo, o plano de negócio perde

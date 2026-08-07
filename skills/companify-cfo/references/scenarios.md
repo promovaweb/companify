@@ -1,7 +1,7 @@
 # Cenários e sensibilidade
 
 Sempre que houver incerteza material, use três cenários com valores
-claramente identificados como premissas — nunca como fato:
+claramente identificados como premissas: nunca como fato:
 
 ```text
 CONSERVADOR
@@ -31,6 +31,6 @@ o resultado, testando variações isoladas sobre o cenário base:
 +30% custo de infraestrutura
 ```
 
-Priorize a validação das premissas com maior sensibilidade — são as que mais
+Priorize a validação das premissas com maior sensibilidade: são as que mais
 barateiam o próximo experimento quando resolvidas primeiro. Uma premissa de
 baixo impacto no resultado não justifica um experimento caro.

@@ -12,7 +12,7 @@ description: Define o sistema de geração de receita. Use para estruturar compa
 - **Fontes de verdade:** ler `company/business-model.md`,
   `company/marketing.md` e, quando já produzido, `company/finance.md` para o
   CAC máximo sustentável.
-- **Escopo e idempotência:** pricing lidera com CFO, CPO e CMO consultados —
+- **Escopo e idempotência:** pricing lidera com CFO, CPO e CMO consultados :
   não decidir preço isoladamente.
 - **Validação:** cada métrica de receita usada (MRR, ARR, ARPA, ACV, win
   rate, sales cycle, pipeline coverage, NRR, GRR, churn, expansion revenue) só
@@ -21,6 +21,9 @@ description: Define o sistema de geração de receita. Use para estruturar compa
   proposto e as premissas usadas.
 
 ## Fluxo
+
+Use o [worksheet do sistema de receita](references/revenue-worksheet.md) para
+registrar o funil, o pricing e os canais comerciais.
 
 1. Descrever o funil completo: lead → oportunidade → venda → ativação →
    retenção → expansão, com as taxas de conversão conhecidas ou modeladas
@@ -40,6 +43,6 @@ description: Define o sistema de geração de receita. Use para estruturar compa
 A pergunta central é: isso pode ser transformado em receita, de forma
 repetível? Uma venda pontual não é um sistema de receita. Antes de recomendar
 aumento de investimento comercial, cruzar CAC do canal com o CAC máximo
-sustentável do CFO e com a retenção do canal reportada pelo CPO — otimizar
+sustentável do CFO e com a retenção do canal reportada pelo CPO: otimizar
 apenas a taxa de fechamento sem olhar para retenção produz crescimento que
 não se sustenta.

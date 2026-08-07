@@ -1,10 +1,10 @@
-# Registro de decisões
+# Registro de escolhas
 
-Documento: `.companify/decisions.md`. Cada decisão relevante do conselho
-recebe uma entrada `DEC-NNN`, numerada sequencialmente e nunca reaproveitada.
+Documento: `.companify/escolhas.md`. Cada escolha relevante do conselho
+recebe uma entrada `ESC-NNN`, numerada sequencialmente e nunca reaproveitada.
 
 ```markdown
-## DEC-001 — Modelo de cobrança inicial
+## ESC-001 — Modelo de cobrança inicial
 
 Data:
 Status:
@@ -19,7 +19,7 @@ Status:
 2.
 3.
 
-### Evidências
+### Comprovações
 
 ...
 
@@ -34,7 +34,7 @@ CRO:
 CMO:
 CPO:
 
-### Decisão
+### Escolha
 
 ...
 
@@ -51,8 +51,8 @@ CPO:
 ...
 ```
 
-Quando uma decisão muda, não sobrescreva a entrada original: adicione uma
-nova seção `### Revisão` com data, nova evidência e a decisão atualizada,
+Quando uma escolha muda, não sobrescreva a entrada original: adicione uma
+nova seção `### Revisão` com data, nova comprovação e a escolha atualizada,
 preservando o histórico. Isso transforma o plano de negócio em um sistema
 rastreável, não em um documento que perde memória a cada execução.
 
@@ -70,7 +70,7 @@ CMO: Concordo parcialmente.
 O resultado é analítico, por área, terminando em alternativas e recomendação:
 
 ```markdown
-## Decisão analisada
+## Escolha analisada
 
 Aumentar orçamento de aquisição de R$ 20 mil para R$ 50 mil.
 
@@ -104,7 +104,7 @@ C. Subir para R$ 30 mil por 30 dias e medir ativação.
 
 Alternativa C.
 
-## Evidência necessária
+## Comprovação necessária
 
 Ativação, CAC e payback da nova coorte.
 
@@ -114,7 +114,7 @@ Reavaliar após 30 dias.
 ```
 
 O Board procura especificamente: conflitos, premissas incompatíveis entre
-skills, dependências não declaradas, decisões sem evidência, otimização
-local (uma área melhora à custa de outra sem que isso seja explícito), riscos
-ignorados, metas incompatíveis e inconsistências entre documentos de
+skills, dependências não declaradas, escolhas sem comprovação, otimização
+local (uma área melhora à custa de outra sem que isso fique explícito),
+ameaças ignoradas, metas incompatíveis e inconsistências entre documentos de
 `company/`.

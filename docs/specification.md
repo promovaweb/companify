@@ -12,8 +12,8 @@ A versão original recebida do usuário tinha três lacunas de propriedade de
 artefato, corrigidas nesta versão:
 
 1. **`company/strategy.md`** aparecia na árvore final (seção "Resultado
-   esperado") sem skill responsável — as demais lideranças (CPO, CTO, CMO,
-   CRO, CFO, COO, CHRO, Risk) tinham `Artefato:` explícito, mas o CEO não.
+   esperado") sem skill responsável: as demais lideranças (CPO, CTO, CMO,
+   CRO, CFO, COO, CHRO, Ameaças) tinham `Artefato:` explícito, mas o CEO não.
    Corrigido: `companify-ceo` é o responsável por `company/strategy.md`
    (tese, direção estratégica, prioridades e trade-offs).
 2. **`company/roadmap.md`** aparecia na árvore final e na seção "Roadmap
@@ -26,11 +26,21 @@ artefato, corrigidas nesta versão:
    `companify-setup` cria o esqueleto inicial (índice dos artefatos
    esperados e status de cada um); `companify-business-plan` atualiza o
    índice na consolidação final.
+4. **Taxonomia proibida pelo Hub.** A versão original usava `risco`,
+   `decisão` e `evidência` como categorias nomeadas do sistema. O índice
+   `PROHIBITED-TERMOS-ABSOLUTOS.md` do Hub veta essas famílias léxicas
+   também em skill. Corrigido em todo o repositório: `risco`/`riscos` virou
+   `ameaça`/`ameaças` (a skill `companify-risk` foi renomeada para
+   `companify-ameacas` e `company/risks.md` para `company/ameacas.md`),
+   `decisão`/`decisões` virou `escolha`/`escolhas` (`.companify/decisions.md`
+   virou `.companify/escolhas.md` e o formato `DEC-NNN` virou `ESC-NNN`), e
+   `evidência`/`evidências` virou `comprovação`/`comprovações`
+   (`.companify/evidence.md` virou `.companify/comprovacoes.md`).
 
-Também explicitado: `.companify/evidence.md`, `.companify/assumptions.md`,
-`.companify/decisions.md` e `.companify/metrics.md` são registros
-compartilhados — qualquer skill pode adicionar uma entrada — mas
-`companify-board` cura `decisions.md` (conflitos e resoluções) e
+Também explicitado: `.companify/comprovacoes.md`, `.companify/assumptions.md`,
+`.companify/escolhas.md` e `.companify/metrics.md` são registros
+compartilhados, e qualquer skill pode adicionar uma entrada. Porém,
+`companify-board` cura `escolhas.md` (conflitos e resoluções) e
 `companify-cfo`/`companify-cro` curam `metrics.md` em conjunto. A árvore de
 métricas de exemplo (seção "Métricas") é ilustrativa de um negócio SaaS; uma
 skill não deve forçar esse formato em um modelo de negócio onde ele não se
@@ -56,7 +66,7 @@ O Companify deve funcionar como um **conselho executivo virtual
 colaborativo**. Não é composto apenas por prompts que simulam cargos. Cada
 skill possui responsabilidade própria, fontes de informação definidas,
 limites de atuação, perguntas que deve responder, artefatos pelos quais é
-responsável, dependências de outras skills, critérios de validação, conflitos
+responsável, dependências de outras skills, regras de validação, conflitos
 que precisa detectar, métricas relacionadas à sua área, regras sobre o que
 pode ou não assumir e protocolo de colaboração com os demais executivos.
 
@@ -69,8 +79,9 @@ Brandfy e Companify operam como módulos complementares. O Brandfy resolve a
 marca (propósito, missão, visão, valores, público, posicionamento,
 personalidade, voz, naming, identidade visual, aplicações); o Companify
 resolve a empresa (estratégia empresarial, mercado, modelo de negócio,
-produto, tecnologia, marketing, vendas, finanças, operações, pessoas, riscos
-e plano de negócio), consumindo o contexto de marca como entrada compartilhada.
+produto, tecnologia, marketing, vendas, finanças, operações, pessoas, ameaças
+e plano de negócio), consumindo o contexto de marca como entrada
+compartilhada.
 
 O Companify consome artefatos já aprovados pelo Brandfy sempre que
 disponíveis: `.brandfy/config.yaml`, `.brandfy/brief.md`,
@@ -78,7 +89,7 @@ disponíveis: `.brandfy/config.yaml`, `.brandfy/brief.md`,
 `brand/manual.md`. Esses documentos não são silenciosamente reescritos pelas
 skills Companify.
 
-Quando uma análise empresarial entra em conflito com uma decisão de marca, o
+Quando uma análise empresarial entra em conflito com uma escolha de marca, o
 Companify registra o conflito:
 
 ```text
@@ -96,11 +107,11 @@ Avaliar uma oferta de entrada diferente, preservando o posicionamento da
 oferta principal.
 
 Status:
-Decisão pendente.
+Escolha pendente.
 ```
 
 Mudanças na estratégia de marca são encaminhadas às skills `brandfy-*`
-correspondentes — o Companify nunca aplica a mudança diretamente em
+correspondentes: o Companify nunca aplica a mudança diretamente em
 `.brandfy/` ou `brand/`.
 
 ## 3. Princípio central
@@ -111,14 +122,14 @@ uma das categorias canônicas:
 
 ```text
 FATO
-EVIDÊNCIA
+COMPROVAÇÃO
 DECLARAÇÃO DO USUÁRIO
 CONTEXTO BRANDFY
 INFERÊNCIA
 HIPÓTESE
 PREMISSA
 RECOMENDAÇÃO
-DECISÃO
+ESCOLHA
 PENDÊNCIA
 ```
 
@@ -133,7 +144,7 @@ estratégia de produto; estruturar modelo de negócio; definir monetização;
 estudar pricing; elaborar estratégia de marketing e de entrada no mercado;
 estruturar vendas; definir operação; analisar estratégia tecnológica; estimar
 recursos; estruturar equipe; construir modelo financeiro; calcular unit
-economics quando aplicável; projetar cenários; identificar riscos; definir
+economics quando aplicável; projetar cenários; identificar ameaças; definir
 indicadores; construir roadmap empresarial; criar plano de execução; produzir
 plano de negócio consolidado.
 
@@ -141,7 +152,7 @@ plano de negócio consolidado.
 
 Não inventar pesquisas de mercado, estatísticas, concorrentes, faturamento,
 CAC, churn, salários, custos, impostos ou taxas de conversão. Não apresentar
-projeção como fato. Não tomar decisões em nome do usuário sem registrá-las
+projeção como fato. Não escolher em nome do usuário sem registrar a escolha
 como recomendação. Não substituir aconselhamento jurídico, contábil ou
 financeiro profissional. Não redefinir silenciosamente a marca criada pelo
 Brandfy. Não produzir dezenas de documentos contraditórios entre si.
@@ -173,7 +184,7 @@ skills/
   companify-cfo/
   companify-coo/
   companify-chro/
-  companify-risk/
+  companify-ameacas/
   companify-board/
   companify-business-plan/
   companify-audit/
@@ -195,7 +206,7 @@ skills/companify-ceo/
 └── assets/
 ```
 
-Nem todas precisam de todos os diretórios — criar somente o necessário.
+Nem todas precisam de todos os diretórios: criar somente o necessário.
 
 ## 8. Estrutura no projeto consumidor
 
@@ -207,10 +218,10 @@ Estado interno (`.companify/`, representa o processo):
 ├── company-context.md
 ├── interview.md
 ├── assumptions.md
-├── decisions.md
-├── evidence.md
+├── escolhas.md
+├── comprovacoes.md
 ├── metrics.md
-├── risks.md
+├── ameacas.md
 └── reviews/
 ```
 
@@ -229,9 +240,9 @@ company/
 ├── finance.md                  companify-cfo
 ├── operations.md               companify-coo
 ├── people.md                    companify-chro
-├── risks.md                     companify-risk
-├── roadmap.md                   companify-business-plan (consolida os setoriais)
-└── business-plan.md             companify-business-plan
+├── ameacas.md                    companify-ameacas
+├── roadmap.md                     companify-business-plan (consolida os setoriais)
+└── business-plan.md                companify-business-plan
 ```
 
 ## 9. Company Context
@@ -245,18 +256,18 @@ completa está documentada em `skills/companify-setup/references/company-context
 ## 10–27, 30–31, 36–49. Demais seções
 
 O conteúdo integral de cada skill (responsabilidades, artefatos, perguntas
-fundamentais, protocolo, critérios de validação), da matriz de colaboração
-executiva, do registro de decisões e premissas, dos gates, da esteira
+fundamentais, protocolo, regras de validação), da matriz de colaboração
+executiva, do registro de escolhas e premissas, dos gates, da esteira
 completa, das integrações CEO/CMO ↔ Brandfy, da filosofia dos executivos
 virtuais e das extensões futuras está implementado diretamente em cada
-`skills/companify-*/SKILL.md` e nas referências que cada skill carrega — este
+`skills/companify-*/SKILL.md` e nas referências que cada skill carrega: este
 documento não duplica esse conteúdo para evitar duas fontes de verdade
 divergentes. Use a tabela abaixo para localizar cada assunto.
 
 | Assunto | Onde está |
 | --- | --- |
 | Matriz de colaboração executiva | `skills/companify-board/references/collaboration-matrix.md` |
-| Registro de decisões (`DEC-NNN`) | `skills/companify-board/references/decision-record.md` |
+| Registro de escolhas (`ESC-NNN`) | `skills/companify-board/references/decision-record.md` |
 | Registro de premissas (`ASS-NNN`) | `skills/companify-interview/references/assumption-record.md` |
 | Quatro gates (Context, Viability, Executive Alignment, Business Plan) | `skills/companify-builder/references/gates.md` |
 | Esteira completa | `skills/companify-builder/SKILL.md` |
@@ -269,11 +280,11 @@ divergentes. Use a tabela abaixo para localizar cada assunto.
 
 ## 32. MVP e extensões futuras
 
-As 17 skills listadas na seção 6 compõem o MVP. Extensões futuras —
+As 17 skills listadas na seção 6 compõem o MVP. Extensões futuras, como
 `companify-investor`, `companify-fundraising`, `companify-mna`,
 `companify-international`, `companify-franchise`, `companify-saas`,
 `companify-marketplace`, `companify-ecommerce`, `companify-agency`,
-`companify-partnerships`, `companify-procurement`, `companify-compliance` —
+`companify-partnerships`, `companify-procurement` e `companify-compliance`,
 funcionam como especializações que consultam o mesmo Company Context, sem
 substituir o conselho principal.
 
@@ -290,10 +301,10 @@ brand/
 ├── company-context.md
 ├── interview.md
 ├── assumptions.md
-├── decisions.md
-├── evidence.md
+├── escolhas.md
+├── comprovacoes.md
 ├── metrics.md
-├── risks.md
+├── ameacas.md
 └── reviews/
 
 company/
@@ -308,7 +319,7 @@ company/
 ├── finance.md
 ├── operations.md
 ├── people.md
-├── risks.md
+├── ameacas.md
 ├── roadmap.md
 └── business-plan.md
 ```
@@ -320,6 +331,6 @@ funcionar e como vamos executá-la?"
 
 O valor do Companify está principalmente na relação entre as duas camadas: uma
 estratégia de marca deixa de existir isoladamente e passa a alimentar produto,
-mercado, marketing e estratégia empresarial; evidências encontradas durante a
-construção da empresa podem revelar que hipóteses da marca precisam ser
+mercado, marketing e estratégia empresarial; comprovações encontradas durante
+a construção da empresa podem revelar que hipóteses da marca precisam ser
 revistas.

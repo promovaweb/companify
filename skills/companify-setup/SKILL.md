@@ -57,6 +57,6 @@ agente antigo.
 
 Tratar o setup como preparação de governança, não como criação do plano de
 negócio. Confirmar responsáveis por respostas e aprovações, localização das
-evidências, artefatos canônicos e forma de resolver pendências. Uma estrutura
-completa com informação fraca continua sendo um plano incompleto — o setup
+comprovações, artefatos canônicos e forma de resolver pendências. Uma estrutura
+completa com informação fraca continua sendo um plano incompleto: o setup
 não deve ser confundido com o trabalho de `$companify-interview`.

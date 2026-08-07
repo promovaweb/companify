@@ -41,7 +41,7 @@ Agências com mais de dez clientes pagariam R$ 497/mês.
 Experimento:
 Oferecer o produto a 20 agências do ICP.
 
-Critério:
+Condição de sucesso:
 Pelo menos 4 demonstrações e 2 contratos.
 
 Prazo:
@@ -53,5 +53,5 @@ Pendente.
 
 Registre o experimento junto da premissa em `.companify/assumptions.md` e
 atualize o `Status` (`não validada`, `em teste`, `validada`, `invalidada`)
-assim que houver resultado. Uma premissa invalidada não é apagada — vira
-evidência para a próxima hipótese.
+assim que houver resultado. Uma premissa invalidada não é apagada: vira
+comprovação para a próxima hipótese.

@@ -1,4 +1,0 @@
-interface:
-  display_name: "Riscos Empresariais"
-  short_description: "Riscos por categoria, mitigação e contingência"
-  default_prompt: "Use $companify-risk para estruturar company/risks.md."

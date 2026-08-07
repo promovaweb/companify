@@ -13,7 +13,7 @@ Antes de qualquer estratégia consolidada:
 [ ] cliente identificado
 [ ] solução descrita
 [ ] estágio conhecido
-[ ] evidências separadas de hipóteses
+[ ] comprovações separadas de hipóteses
 [ ] Brandfy carregado quando existente
 ```
 
@@ -39,7 +39,7 @@ Antes da consolidação executiva:
 [ ] CRO revisou receita
 [ ] CFO revisou finanças
 [ ] COO revisou operação
-[ ] riscos relevantes registrados
+[ ] ameaças relevantes registradas
 [ ] conflitos executivos analisados
 ```
 
@@ -49,8 +49,8 @@ Antes da consolidação executiva:
 [ ] plano consolidado
 [ ] nenhuma hipótese crítica apresentada como fato
 [ ] projeções possuem premissas
-[ ] decisões possuem rastreabilidade
-[ ] riscos possuem mitigação
+[ ] escolhas possuem rastreabilidade
+[ ] ameaças possuem mitigação
 [ ] métricas estão definidas
 [ ] plano de 90 dias existe
 [ ] pendências estão explícitas
@@ -87,7 +87,7 @@ Context Gate
      CEO       CPO             CTO       CMO       CRO
       │         │               │         │         │
       ▼         ▼               ▼         ▼         ▼
-     COO       CFO            CHRO      Risk        │
+     COO       CFO            CHRO   Ameaças        │
       │         │               │         │         │
       └─────────┴───────────────┴─────────┴─────────┘
                 │
@@ -107,13 +107,13 @@ Context Gate
         Business Plan Gate
 ```
 
-As nove skills executivas (CEO, CPO, CTO, CMO, CRO, CFO, COO, CHRO, Risk)
+As nove skills executivas (CEO, CPO, CTO, CMO, CRO, CFO, COO, CHRO, Ameaças)
 trabalham em paralelo sobre o mesmo Company Context após o Viability Gate.
-Nenhuma delas depende sequencialmente da outra dentro desse bloco — a
+Nenhuma delas depende sequencialmente da outra dentro desse bloco: a
 ordem de leitura acima é apenas de agrupamento, não de precedência. O Board
 só roda depois que todas tiverem produzido (ou explicitamente pulado, com
-evidência) seu artefato em `company/`.
+comprovação) seu artefato em `company/`.
 
 Uma empresa existente pode pular etapas já suficientemente documentadas; a
-evidência do que já existe deve justificar o salto, registrada por
+comprovação do que já existe deve justificar o salto, registrada por
 `companify-builder` ao decidir a sequência necessária.
