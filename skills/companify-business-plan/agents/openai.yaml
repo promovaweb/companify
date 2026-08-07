@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plano de Negócio"
+  short_description: "Consolida o plano de negócio e o roadmap empresarial"
+  default_prompt: "Use $companify-business-plan para consolidar company/business-plan.md."

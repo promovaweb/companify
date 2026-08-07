@@ -1,0 +1,4 @@
+interface:
+  display_name: "CEO Virtual"
+  short_description: "Tese empresarial e direção estratégica integrada"
+  default_prompt: "Use $companify-ceo para avaliar a estratégia do negócio."

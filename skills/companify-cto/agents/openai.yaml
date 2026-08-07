@@ -1,0 +1,4 @@
+interface:
+  display_name: "CTO Virtual"
+  short_description: "Estratégia tecnológica, arquitetura e build vs. buy"
+  default_prompt: "Use $companify-cto para estruturar company/technology.md."

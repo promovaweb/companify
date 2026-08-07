@@ -1,0 +1,4 @@
+interface:
+  display_name: "CFO Virtual"
+  short_description: "Modelo financeiro, unit economics e cenários"
+  default_prompt: "Use $companify-cfo para estruturar company/finance.md."

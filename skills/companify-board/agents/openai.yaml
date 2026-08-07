@@ -1,0 +1,4 @@
+interface:
+  display_name: "Conselho Executivo"
+  short_description: "Confronta análises executivas e resolve conflitos"
+  default_prompt: "Use $companify-board para debater uma decisão empresarial complexa."

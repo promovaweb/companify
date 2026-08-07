@@ -1,0 +1,4 @@
+interface:
+  display_name: "CHRO Virtual"
+  short_description: "Arquitetura humana, papéis críticos e contratação"
+  default_prompt: "Use $companify-chro para estruturar company/people.md."

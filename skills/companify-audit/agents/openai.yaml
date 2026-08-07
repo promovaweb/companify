@@ -1,0 +1,4 @@
+interface:
+  display_name: "Auditoria do Plano"
+  short_description: "Revisão final de consistência e prontidão"
+  default_prompt: "Use $companify-audit para revisar o plano de negócio consolidado."

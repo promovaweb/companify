@@ -1,0 +1,4 @@
+interface:
+  display_name: "CRO Virtual"
+  short_description: "Monetização, vendas, pipeline e receita"
+  default_prompt: "Use $companify-cro para estruturar company/revenue.md."

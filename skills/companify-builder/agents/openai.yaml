@@ -1,0 +1,4 @@
+interface:
+  display_name: "Construir Empresa"
+  short_description: "Coordena a construção completa do plano de negócio"
+  default_prompt: "Use $companify-builder para construir o plano de negócio do zero."

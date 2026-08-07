@@ -1,0 +1,4 @@
+interface:
+  display_name: "Configurar Companify"
+  short_description: "Prepara .companify/, company/ e as instruções do projeto"
+  default_prompt: "Use $companify-setup para instalar o Companify neste projeto."

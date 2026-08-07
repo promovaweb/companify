@@ -1,0 +1,4 @@
+interface:
+  display_name: "CPO Virtual"
+  short_description: "Estratégia de produto, discovery e roadmap"
+  default_prompt: "Use $companify-cpo para estruturar company/product.md."

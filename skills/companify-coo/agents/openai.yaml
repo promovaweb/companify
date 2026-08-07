@@ -1,0 +1,4 @@
+interface:
+  display_name: "COO Virtual"
+  short_description: "Capacidade operacional, processos e gargalos"
+  default_prompt: "Use $companify-coo para estruturar company/operations.md."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "CMO Virtual"
+  short_description: "Geração de demanda e go-to-market a partir da marca"
+  default_prompt: "Use $companify-cmo para estruturar company/marketing.md."

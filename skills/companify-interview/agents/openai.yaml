@@ -1,0 +1,4 @@
+interface:
+  display_name: "Entrevista Empresarial"
+  short_description: "Conduz a descoberta progressiva do negócio"
+  default_prompt: "Use $companify-interview para preencher as lacunas do Company Context."

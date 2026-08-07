@@ -1,0 +1,4 @@
+interface:
+  display_name: "Modelo de Negócio"
+  short_description: "Como o negócio cria, entrega e captura valor"
+  default_prompt: "Use $companify-business-model para estruturar company/business-model.md."
