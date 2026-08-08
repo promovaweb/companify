@@ -218,21 +218,20 @@ BOLD_FONT="$(fc-match -f '%{file}\n' 'DejaVu Sans:style=Bold' | head -1)"
 [ -f "$BOLD_FONT" ] || fail "Fonte DejaVu Sans Bold não encontrada."
 
 magick \
-  -size 1600x2560 xc:'#171717' \
-  -fill '#1D4ED8' -draw 'circle 1310,300 1445,300' \
-  -fill none -stroke '#93C5FD' -strokewidth 12 \
-  -draw 'roundrectangle 180,360 328,508 30,30' \
-  -stroke none -fill '#93C5FD' -font "$BOLD_FONT" -pointsize 92 \
-  -gravity northwest -annotate +226+375 'C' \
-  -fill '#FFFFFF' -font "$BOLD_FONT" -pointsize 120 \
-  -annotate +180+940 'Companify' \
-  -annotate +180+1085 'Documentação' \
-  -annotate +180+1230 'completa' \
-  -fill '#D4D4D4' -font "$SANS_FONT" -pointsize 54 \
-  -annotate +180+1500 'Guia do usuário e referência técnica' \
-  -stroke '#404040' -strokewidth 4 -draw 'line 180,2220 1420,2220' \
-  -stroke none -fill '#D4D4D4' -pointsize 38 \
-  -annotate +180+2280 'PROMOVAWEB · DOCUMENTAÇÃO OFICIAL' \
+  -size 1600x2560 xc:'#FFFFFF' \
+  -font "$SANS_FONT" -fill '#171717' -pointsize 34 \
+  -gravity northwest -annotate +150+170 'COMPANIFY' \
+  -fill '#000000' -font "$BOLD_FONT" -pointsize 116 \
+  -annotate +150+850 'Documentação' \
+  -annotate +150+990 'completa' \
+  -fill '#171717' -font "$SANS_FONT" -pointsize 42 \
+  -annotate +150+1200 'Conselho executivo virtual para construir' \
+  -annotate +150+1260 'a empresa por trás de uma marca.' \
+  -fill '#737373' -pointsize 38 \
+  -annotate +150+1400 'Guia do usuário e referência técnica.' \
+  -stroke '#D4D4D4' -strokewidth 2 -draw 'line 150,2260 1450,2260' \
+  -stroke none -fill '#737373' -pointsize 30 \
+  -annotate +150+2340 "EDIÇÃO V$VERSION" \
   "$COVER_OUT"
 
 (

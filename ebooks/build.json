@@ -2,8 +2,8 @@
   "schema_version": 1,
   "version": "0.1.0",
   "edition": "v0.1.0",
-  "generated_at": "2026-08-08T01:25:05.059402Z",
-  "source_sha256": "d383563cddcbde1270d699995d59f87ec1168b1665938b53d735a353c09badd7",
+  "generated_at": "2026-08-08T01:36:39.977483Z",
+  "source_sha256": "12ce8e655b17ddcd996464917146a47e52bded26f992c0ae862f8d8fe2233781",
   "sources": [
     "docs/develop/arquitetura.md",
     "docs/develop/artefatos.md",
@@ -40,11 +40,11 @@
   "artifacts": {
     "pdf": {
       "file": "Companify-Documentacao-Completa-v0.1.0.pdf",
-      "sha256": "db875f7175f74900c3c4622306bee49925bc4d16879cd5c71785f086fdf65596"
+      "sha256": "eba489fa85183c49fdf0290fb07a8c524f067d2f22205c4738e901ef71c79fb0"
     },
     "epub": {
       "file": "Companify-Documentacao-Completa-v0.1.0.epub",
-      "sha256": "e30f700b6e8020e55bb9c3acdd69e988a289f79c0834fcdf41719605c9345e69"
+      "sha256": "90d2d723f85e713039f009c52cad2326fda853a710e69bad7e9e9c4f5be1fd9d"
     }
   }
 }
