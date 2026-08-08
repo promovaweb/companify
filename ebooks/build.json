@@ -2,9 +2,10 @@
   "schema_version": 1,
   "version": "0.1.0",
   "edition": "v0.1.0",
-  "generated_at": "2026-08-08T01:36:39.977483Z",
-  "source_sha256": "12ce8e655b17ddcd996464917146a47e52bded26f992c0ae862f8d8fe2233781",
+  "generated_at": "2026-08-08T01:50:55.045855Z",
+  "source_sha256": "0659724bb1e61c04128d5146d971f9d1d9c7719a380e2613b08d7406621b5e4b",
   "sources": [
+    "brand/logo/png/icon-192w.png",
     "docs/develop/arquitetura.md",
     "docs/develop/artefatos.md",
     "docs/develop/contrato-das-skills.md",
@@ -40,11 +41,11 @@
   "artifacts": {
     "pdf": {
       "file": "Companify-Documentacao-Completa-v0.1.0.pdf",
-      "sha256": "eba489fa85183c49fdf0290fb07a8c524f067d2f22205c4738e901ef71c79fb0"
+      "sha256": "7ad60df48ea1280a80b2dda9f335b2745728e92fefb7dcea3b52b3d6eae2b8fd"
     },
     "epub": {
       "file": "Companify-Documentacao-Completa-v0.1.0.epub",
-      "sha256": "90d2d723f85e713039f009c52cad2326fda853a710e69bad7e9e9c4f5be1fd9d"
+      "sha256": "3fcde850f29e6483927bc1ba6612748c892f39a6de05d211bba18abc93a77392"
     }
   }
 }

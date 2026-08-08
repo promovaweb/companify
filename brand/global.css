@@ -1,0 +1,80 @@
+/**
+ * Design tokens do Companify, gerados a partir de brand/tokens.json.
+ * Edite tokens.json e propague manualmente para este arquivo até o
+ * Companify ganhar um gerador próprio de tokens.
+ */
+
+:root {
+  --color-primary-50: #EEF1F6;
+  --color-primary-100: #D7DEEA;
+  --color-primary-200: #AFC0D6;
+  --color-primary-300: #869FBF;
+  --color-primary-400: #5D7DA8;
+  --color-primary-500: #3D5D89;
+  --color-primary-600: #2C4569;
+  --color-primary-700: #1F3252;
+  --color-primary-800: #172745;
+  --color-primary-900: #12213E;
+  --color-primary-950: #0A1224;
+  --color-accent-50: #FCF4E4;
+  --color-accent-100: #F8E6C0;
+  --color-accent-200: #F0CD86;
+  --color-accent-300: #E6B354;
+  --color-accent-400: #D9A038;
+  --color-accent-500: #C9922B;
+  --color-accent-600: #A97722;
+  --color-accent-700: #855D1A;
+  --color-accent-800: #614313;
+  --color-accent-900: #3D2A0C;
+  --color-accent-950: #241906;
+  --color-secondary-50: #E7F5F4;
+  --color-secondary-100: #C3E7E4;
+  --color-secondary-200: #8ACFC9;
+  --color-secondary-300: #52B4AC;
+  --color-secondary-400: #2C978F;
+  --color-secondary-500: #0E7C7B;
+  --color-secondary-600: #0B6664;
+  --color-secondary-700: #094F4E;
+  --color-secondary-800: #073C3B;
+  --color-secondary-900: #052928;
+  --color-secondary-950: #031918;
+  --color-neutral-50: #F5F5F0;
+  --color-neutral-100: #E7E7E0;
+  --color-neutral-200: #D9D9D2;
+  --color-neutral-300: #B8B8B0;
+  --color-neutral-400: #8C8C85;
+  --color-neutral-500: #5B5F66;
+  --color-neutral-600: #45484D;
+  --color-neutral-700: #2E3033;
+  --color-neutral-800: #1F2123;
+  --color-neutral-900: #1A1A1A;
+  --color-neutral-950: #0D0D0D;
+  --color-background: #FFFFFF;
+  --color-surface: #F5F5F0;
+  --color-text: #1A1A1A;
+  --color-text-muted: #5B5F66;
+  --color-border: #D9D9D2;
+  --color-accent: #C9922B;
+  --color-focus: #12213E;
+  --color-success: #0B6664;
+  --color-warning: #A97722;
+  --color-error: #B91C1C;
+  --color-info: #12213E;
+  --font-body: "Inter", -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-display: "Manrope", "Inter", -apple-system, "Segoe UI", Arial, sans-serif;
+}
+
+.dark,
+:root[data-theme="dark"] {
+  --color-background: #0A1224;
+  --color-surface: #172745;
+  --color-text: #F5F5F0;
+  --color-text-muted: #AFC0D6;
+  --color-border: #2C4569;
+  --color-accent: #E6B354;
+  --color-focus: #52B4AC;
+  --color-success: #52B4AC;
+  --color-warning: #F0CD86;
+  --color-error: #FCA5A5;
+  --color-info: #869FBF;
+}

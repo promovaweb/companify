@@ -59,6 +59,13 @@ premium), o Companify registra a tensão em `.companify/escolhas.md` e
 encaminha a mudança à skill `brandfy-estrategia` correspondente, em vez de
 resolver a questão sozinho.
 
+## Identidade do projeto
+
+A própria marca Companify vive em [`brand/`](brand/): símbolo de nove nós,
+paleta `navy`/`amber`/`teal`, tokens CSS/JSON e o manual em
+[`brand/README.md`](brand/README.md). É a identidade do produto Companify em
+si, não de uma empresa criada por ele.
+
 ## Documentação
 
 A documentação oficial separa o uso da biblioteca e a manutenção do

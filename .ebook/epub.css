@@ -1,7 +1,6 @@
 /**
  * Formata a edição EPUB sem impor dimensões fixas ao leitor digital.
- * Mesmo kit de cores do design system do Hub usado em Specsfy e ClickUpfy
- * (brand/pdf/pdf.css), sem marca própria.
+ * Cores da própria marca do Companify (brand/tokens.json).
  */
 
 body {
@@ -9,7 +8,7 @@ body {
   margin: 0 auto;
   padding: 1.2em;
   background: #ffffff;
-  color: #171717;
+  color: #1a1a1a;
   font-family: sans-serif;
   line-height: 1.58;
 }
@@ -17,14 +16,14 @@ body {
 h1,
 h2,
 h3 {
-  color: #000000;
+  color: #12213e;
   font-family: sans-serif;
   line-height: 1.2;
 }
 
 h1 {
   padding-bottom: 0.35em;
-  border-bottom: 0.12em solid #000000;
+  border-bottom: 0.14em solid #c9922b;
 }
 
 h2 {
@@ -32,7 +31,7 @@ h2 {
 }
 
 a {
-  color: #1d4ed8;
+  color: #12213e;
 }
 
 code,
@@ -42,13 +41,13 @@ pre {
 
 code {
   padding: 0.08em 0.28em;
-  background: #f5f5f5;
+  background: #f5f5f0;
 }
 
 pre {
   padding: 0.8em 1em;
-  border-left: 0.22em solid #000000;
-  background: #f5f5f5;
+  border-left: 0.24em solid #12213e;
+  background: #f5f5f0;
   white-space: pre-wrap;
 }
 
@@ -60,8 +59,8 @@ pre code {
 blockquote {
   margin-left: 0;
   padding-left: 1em;
-  border-left: 0.22em solid #d4d4d4;
-  color: #737373;
+  border-left: 0.24em solid #c9922b;
+  color: #5b5f66;
 }
 
 table {
@@ -73,12 +72,12 @@ table {
 th,
 td {
   padding: 0.45em;
-  border: 1px solid #d4d4d4;
+  border: 1px solid #d9d9d2;
   text-align: left;
 }
 
 th {
-  background: #f5f5f5;
+  background: #f5f5f0;
 }
 
 img {

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Logo do Companify para fundo claro</title>
+  <desc id="desc">Ícone de nove nós e o nome Companify em assinatura horizontal, em navy sobre fundo claro.</desc>
+  <g transform="translate(24 24) scale(.53125)">
+    <circle cx="256" cy="256" r="150" fill="none" stroke="#D9D9D2" stroke-width="4"/>
+    <circle cx="256" cy="106" r="21" fill="#12213E"/>
+    <circle cx="362.07" cy="149.93" r="21" fill="#12213E"/>
+    <circle cx="406" cy="256" r="21" fill="#12213E"/>
+    <circle cx="362.07" cy="362.07" r="21" fill="#12213E"/>
+    <circle cx="256" cy="406" r="21" fill="#12213E"/>
+    <circle cx="149.93" cy="362.07" r="21" fill="#12213E"/>
+    <circle cx="106" cy="256" r="21" fill="#12213E"/>
+    <circle cx="149.93" cy="149.93" r="21" fill="#12213E"/>
+    <circle cx="256" cy="256" r="40" fill="#C9922B"/>
+  </g>
+  <text x="350" y="213" fill="#12213E" font-family="Manrope, Inter, Arial, sans-serif" font-size="130" font-weight="750" letter-spacing="-4">Companify</text>
+</svg>

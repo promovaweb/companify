@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-08T01:47:36.364872Z",
+  "assets": [
+    {
+      "path": "logo/svg/icon-dark.svg",
+      "format": "svg",
+      "role": "icon-dark",
+      "width": 512,
+      "height": 512,
+      "sha256": "229128770edfbc11e5afe9fade362663338fca87408465c195f5aee2c748d2b8"
+    },
+    {
+      "path": "logo/svg/icon-light.svg",
+      "format": "svg",
+      "role": "icon-light",
+      "width": 512,
+      "height": 512,
+      "sha256": "e0daefff62d59e8008f8417833616b79c2a091e0ff05c61f40bd9d817f0fb24c"
+    },
+    {
+      "path": "logo/svg/icon.svg",
+      "format": "svg",
+      "role": "icon",
+      "width": 512,
+      "height": 512,
+      "sha256": "747084b9e542f245e84cf4007bb2497a8382c01088250d8fa17724070b96e7ca"
+    },
+    {
+      "path": "logo/svg/logo-dark.svg",
+      "format": "svg",
+      "role": "logo-dark",
+      "width": null,
+      "height": null,
+      "sha256": "1e240e21b58b3a5974a1746111efc90ecc4d0095509e859cac167ebd1fcb2e55"
+    },
+    {
+      "path": "logo/svg/logo-light.svg",
+      "format": "svg",
+      "role": "logo-light",
+      "width": null,
+      "height": null,
+      "sha256": "3dbe1f1b67a75e863de984e6cd50f60b3e48a12571e56170319b9bf04bfdef33"
+    },
+    {
+      "path": "logo/png/icon-16w.png",
+      "format": "png",
+      "role": "icon",
+      "width": 16,
+      "height": 16,
+      "sha256": "ef9e97f143eb80e478f606ac83c178f4a855c9968d82baf20eed2f4ee15cccb0"
+    },
+    {
+      "path": "logo/png/icon-180w.png",
+      "format": "png",
+      "role": "icon",
+      "width": 180,
+      "height": 180,
+      "sha256": "a537aac247bce87b144fb93acce97e88242ace1804637438fe9ba01a4f72b70f"
+    },
+    {
+      "path": "logo/png/icon-192w.png",
+      "format": "png",
+      "role": "icon",
+      "width": 192,
+      "height": 192,
+      "sha256": "8b4c762fd30d0e08344af505d2679b8d2ef74d87de454acf27eb3672f6310421"
+    },
+    {
+      "path": "logo/png/icon-32w.png",
+      "format": "png",
+      "role": "icon",
+      "width": 32,
+      "height": 32,
+      "sha256": "714b4eeca2de3fa373968cdf34116de82017223e94df26aa1cef9b5d59a8c005"
+    },
+    {
+      "path": "logo/png/icon-48w.png",
+      "format": "png",
+      "role": "icon",
+      "width": 48,
+      "height": 48,
+      "sha256": "b9080b02b50496b702f2756b3cda5e7bf20ebe29b93ada4ce737f60b7160fcb3"
+    },
+    {
+      "path": "logo/png/icon-512w.png",
+      "format": "png",
+      "role": "icon",
+      "width": 512,
+      "height": 512,
+      "sha256": "c49acb51f89d35dcdd565f0157680afc9c229a6ce5380715e7e9d318280f8377"
+    },
+    {
+      "path": "logo/png/icon-dark-16w.png",
+      "format": "png",
+      "role": "icon-dark",
+      "width": 16,
+      "height": 16,
+      "sha256": "c151226a62d35ab3ff9ddab9e844099724de8f2314b2f66f07ca964e0ab348d7"
+    },
+    {
+      "path": "logo/png/icon-dark-180w.png",
+      "format": "png",
+      "role": "icon-dark",
+      "width": 180,
+      "height": 180,
+      "sha256": "762b7a5cba319eeeac6accbac8635ac73e3afdbcafed7135d11e01700e493a97"
+    },
+    {
+      "path": "logo/png/icon-dark-192w.png",
+      "format": "png",
+      "role": "icon-dark",
+      "width": 192,
+      "height": 192,
+      "sha256": "02b10e8289dbb401ecbb877135c0bdd1774db55ff058c841a30a3107ada88f61"
+    },
+    {
+      "path": "logo/png/icon-dark-32w.png",
+      "format": "png",
+      "role": "icon-dark",
+      "width": 32,
+      "height": 32,
+      "sha256": "b659457452854b0da710f4ea2ad1fc7d72b6cb0d19305234bed04e2e36e43a4c"
+    },
+    {
+      "path": "logo/png/icon-dark-48w.png",
+      "format": "png",
+      "role": "icon-dark",
+      "width": 48,
+      "height": 48,
+      "sha256": "7dfabc7ec6ed578f523cd1159018c2510eff10314873ee99b248d2daa07b840c"
+    },
+    {
+      "path": "logo/png/icon-dark-512w.png",
+      "format": "png",
+      "role": "icon-dark",
+      "width": 512,
+      "height": 512,
+      "sha256": "be37fbc688f4cda75054c57a4f0dbe18b7f391a1dab9ef74318fa98b56d4e7be"
+    },
+    {
+      "path": "logo/png/icon-dark.png",
+      "format": "png",
+      "role": "icon-dark",
+      "width": 512,
+      "height": 512,
+      "sha256": "e09232410b89bda18fea10ef92198a8d7bfbd174bab9475d4ce9f039c2c2ce6a"
+    },
+    {
+      "path": "logo/png/icon-light-16w.png",
+      "format": "png",
+      "role": "icon-light",
+      "width": 16,
+      "height": 16,
+      "sha256": "8ab0b2bdb99f92ca5a235b0251b5ca883ea619f2db1fc252265b8fbcc8f32315"
+    },
+    {
+      "path": "logo/png/icon-light-180w.png",
+      "format": "png",
+      "role": "icon-light",
+      "width": 180,
+      "height": 180,
+      "sha256": "4bdb2f92f9e2d2cdb7de4d2b31d332868dd5d425ee6c5a8b720220052d5b3956"
+    },
+    {
+      "path": "logo/png/icon-light-192w.png",
+      "format": "png",
+      "role": "icon-light",
+      "width": 192,
+      "height": 192,
+      "sha256": "5cce6de5395a62bdd7ab68391d5e1694797349dae48483d5663ada26035e2094"
+    },
+    {
+      "path": "logo/png/icon-light-32w.png",
+      "format": "png",
+      "role": "icon-light",
+      "width": 32,
+      "height": 32,
+      "sha256": "92669f208ca36a9ab725bdc18bc65140f5248c5e968c8888fe02cb041bda38a1"
+    },
+    {
+      "path": "logo/png/icon-light-48w.png",
+      "format": "png",
+      "role": "icon-light",
+      "width": 48,
+      "height": 48,
+      "sha256": "4e21573f06442cde3a8ccd379adea7bcff754cabfd14380c69b02411916662aa"
+    },
+    {
+      "path": "logo/png/icon-light-512w.png",
+      "format": "png",
+      "role": "icon-light",
+      "width": 512,
+      "height": 512,
+      "sha256": "d035a3b0515c6fa46aa9465a1bde12648fcf3dd9d33df25500d84b32625d4194"
+    },
+    {
+      "path": "logo/png/icon-light.png",
+      "format": "png",
+      "role": "icon-light",
+      "width": 512,
+      "height": 512,
+      "sha256": "0a849b82dd9313597d052b44b185024716d6d2fd8144fd76fa2a1daa6b9e783e"
+    },
+    {
+      "path": "logo/png/icon.png",
+      "format": "png",
+      "role": "icon",
+      "width": 512,
+      "height": 512,
+      "sha256": "1074c2c5af24d048d0d3c3729e46ac60c13d57444da552de9c49facb0e3d028d"
+    },
+    {
+      "path": "logo/png/logo-dark-1024w.png",
+      "format": "png",
+      "role": "logo-dark",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "8d3b43ba4b859f3ee2cf0b28a8f3b8fa1bafea1b1083ceac790ec5faafdc9538"
+    },
+    {
+      "path": "logo/png/logo-dark-2048w.png",
+      "format": "png",
+      "role": "logo-dark",
+      "width": 2048,
+      "height": 2048,
+      "sha256": "7e0ad5ed12c8f63674c6863b555f2ebde9ce573cf8fa427d78307ac1a9ba79ab"
+    },
+    {
+      "path": "logo/png/logo-dark-512w.png",
+      "format": "png",
+      "role": "logo-dark",
+      "width": 512,
+      "height": 512,
+      "sha256": "eb315e8e9ec3ad40a146a7e0c87e8281f031ec42c85b13d6ce14fab0cf608804"
+    },
+    {
+      "path": "logo/png/logo-dark.png",
+      "format": "png",
+      "role": "logo-dark",
+      "width": 943,
+      "height": 242,
+      "sha256": "3eb8a75ea6c1de942977d052fa0ddbb22307a9f8bfd29d4bef4b3d89809c2fb6"
+    },
+    {
+      "path": "logo/png/logo-light-1024w.png",
+      "format": "png",
+      "role": "logo-light",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "587714afa876c66991452830a8c6b390a77ddecd026fb787205db358b50a7864"
+    },
+    {
+      "path": "logo/png/logo-light-2048w.png",
+      "format": "png",
+      "role": "logo-light",
+      "width": 2048,
+      "height": 2048,
+      "sha256": "ba425c6107f816f84d2f2dacd93c368f416545bf04811ceb499df036bd943056"
+    },
+    {
+      "path": "logo/png/logo-light-512w.png",
+      "format": "png",
+      "role": "logo-light",
+      "width": 512,
+      "height": 512,
+      "sha256": "75b65e7c4dfa30c00943ec3097240fcd0097ea01995913955d2bf042501783a4"
+    },
+    {
+      "path": "logo/png/logo-light.png",
+      "format": "png",
+      "role": "logo-light",
+      "width": 943,
+      "height": 242,
+      "sha256": "d468e1567595ff5675a3237f55f48367cabdd69860ff09d77499d291a4e5c665"
+    }
+  ]
+}

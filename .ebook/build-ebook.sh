@@ -15,6 +15,7 @@ PDF_TEMPLATE="$SCRIPT_DIR/template.html"
 EPUB_STYLE="$SCRIPT_DIR/epub.css"
 METADATA="$SCRIPT_DIR/metadata.yaml"
 LINK_FILTER="$SCRIPT_DIR/external-links.lua"
+LOGO="$ROOT/brand/logo/png/icon-192w.png"
 
 fail() {
   echo "Erro: $*" >&2
@@ -47,6 +48,7 @@ required_sources=(
   "$SCRIPT_DIR/fonts/inter-latin.woff2"
   "$SCRIPT_DIR/fonts/OFL-Manrope.txt"
   "$SCRIPT_DIR/fonts/OFL-Inter.txt"
+  "$LOGO"
 )
 
 for source in "${required_sources[@]}"; do
@@ -219,17 +221,18 @@ BOLD_FONT="$(fc-match -f '%{file}\n' 'DejaVu Sans:style=Bold' | head -1)"
 
 magick \
   -size 1600x2560 xc:'#FFFFFF' \
-  -font "$SANS_FONT" -fill '#171717' -pointsize 34 \
-  -gravity northwest -annotate +150+170 'COMPANIFY' \
+  \( "$LOGO" -resize 220x220 \) -geometry +150+170 -composite \
+  -font "$SANS_FONT" -fill '#12213E' -pointsize 34 \
+  -gravity northwest -annotate +150+430 'COMPANIFY' \
   -fill '#000000' -font "$BOLD_FONT" -pointsize 116 \
-  -annotate +150+850 'Documentação' \
-  -annotate +150+990 'completa' \
-  -fill '#171717' -font "$SANS_FONT" -pointsize 42 \
-  -annotate +150+1200 'Conselho executivo virtual para construir' \
-  -annotate +150+1260 'a empresa por trás de uma marca.' \
+  -annotate +150+560 'Documentação' \
+  -annotate +150+700 'completa' \
+  -fill '#12213E' -font "$SANS_FONT" -pointsize 42 \
+  -annotate +150+910 'Conselho executivo virtual para construir' \
+  -annotate +150+970 'a empresa por trás de uma marca.' \
   -fill '#737373' -pointsize 38 \
-  -annotate +150+1400 'Guia do usuário e referência técnica.' \
-  -stroke '#D4D4D4' -strokewidth 2 -draw 'line 150,2260 1450,2260' \
+  -annotate +150+1110 'Guia do usuário e referência técnica.' \
+  -stroke '#D9D9D2' -strokewidth 2 -draw 'line 150,2260 1450,2260' \
   -stroke none -fill '#737373' -pointsize 30 \
   -annotate +150+2340 "EDIÇÃO V$VERSION" \
   "$COVER_OUT"
@@ -258,6 +261,7 @@ magick \
     --variable description="Guia do usuário e referência técnica para criar, documentar e auditar planos de negócio." \
     --variable source_label="docs/" \
     --variable footer_label="Companify — Documentação" \
+    --variable logo="$LOGO" \
     --output "$HTML_OUT"
 )
 

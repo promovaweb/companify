@@ -1,0 +1,14 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description">
+  <title id="title">Ícone do Companify para fundos claros</title>
+  <desc id="description">Nove nós em círculo sem placa de fundo, prontos para um fundo branco ou claro.</desc>
+  <circle cx="256" cy="256" r="150" fill="none" stroke="#D9D9D2" stroke-width="4"/>
+  <circle cx="256" cy="106" r="21" fill="#12213E"/>
+  <circle cx="362.07" cy="149.93" r="21" fill="#12213E"/>
+  <circle cx="406" cy="256" r="21" fill="#12213E"/>
+  <circle cx="362.07" cy="362.07" r="21" fill="#12213E"/>
+  <circle cx="256" cy="406" r="21" fill="#12213E"/>
+  <circle cx="149.93" cy="362.07" r="21" fill="#12213E"/>
+  <circle cx="106" cy="256" r="21" fill="#12213E"/>
+  <circle cx="149.93" cy="149.93" r="21" fill="#12213E"/>
+  <circle cx="256" cy="256" r="40" fill="#C9922B"/>
+</svg>
