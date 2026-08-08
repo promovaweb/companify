@@ -20,16 +20,20 @@ conforme o agente escolhido. `$companify-setup` prepara `.companify/`,
 
 ## Fluxos principais
 
-`$companify-builder` coordena a esteira completa: setup, contexto, entrevista,
-mercado, modelo de negócio, conselho executivo, board, plano de negócio e
-auditoria. Uma empresa existente pode pular etapas já suficientemente
-documentadas, desde que a comprovação justifique o salto. As skills
-especializadas também funcionam de forma direta: por exemplo, `$companify-cfo`
-para revisar apenas as finanças ou `$companify-board` para debater uma escolha
-complexa.
+Quem não conhece o Companify começa por `$companify-assistente`: uma
+conversa rápida, em linguagem simples, que traduz cada especialista e sai
+com um primeiro plano enxuto sem exigir que o usuário conheça a arquitetura
+por trás. `$companify-builder` coordena a esteira completa: setup, contexto,
+entrevista, mercado, modelo de negócio, conselho executivo, board, plano de
+negócio e auditoria, para quem quer passar por tudo com profundidade. Uma
+empresa existente pode pular etapas já suficientemente documentadas, desde
+que a comprovação justifique o salto. As skills especializadas também
+funcionam de forma direta: por exemplo, `$companify-cfo` para revisar apenas
+as finanças ou `$companify-board` para debater uma escolha complexa.
 
 | Skill | Responsabilidade |
 | --- | --- |
+| `companify-assistente` | Guia rápido em linguagem simples para quem não conhece o Companify. |
 | `companify-setup` | Prepara `.companify/`, `company/` e as instruções do projeto. |
 | `companify-interview` | Conduz a descoberta empresarial progressiva e alimenta o Company Context. |
 | `companify-market` | Mercado, segmentos, ICP, concorrência e TAM/SAM/SOM. |

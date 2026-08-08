@@ -2,6 +2,19 @@
 
 Todas as mudanças relevantes deste projeto são documentadas neste arquivo.
 
+## [Unreleased]
+
+### Added
+
+- `companify-assistente`: porta de entrada conversacional para usuários
+  leigos, em linguagem simples e rápida. Traduz os especialistas pelo
+  [glossário](skills/companify-assistente/references/glossario-simples.md),
+  roda `companify-setup` nos bastidores e prioriza um primeiro plano enxuto
+  em uma conversa só, seguindo o
+  [roteiro rápido](skills/companify-assistente/references/roteiro-rapido.md).
+  Encaminha para `companify-builder` quando o usuário pedir a esteira
+  completa.
+
 ## [0.1.0] - 2026-08-07
 
 ### Added

@@ -62,6 +62,11 @@ escolhas, as comprovações, as métricas, as ameaças e as revisões da empresa
 construção. O diretório `company/` guarda os artefatos empresariais
 consolidados.
 
+Quando o usuário não conhecer o Companify ou pedir algo genérico como "me
+ajuda a montar minha empresa", use `$companify-assistente` em vez de expor a
+arquitetura completa: essa skill traduz os especialistas para linguagem
+simples e prioriza um primeiro plano rápido.
+
 Ao criar ou alterar o plano de negócio:
 
 1. Leia `.companify/config.yaml`, `.companify/company-context.md` e os

@@ -2,8 +2,8 @@
   "schema_version": 1,
   "version": "0.1.0",
   "edition": "v0.1.0",
-  "generated_at": "2026-08-08T01:50:55.045855Z",
-  "source_sha256": "0659724bb1e61c04128d5146d971f9d1d9c7719a380e2613b08d7406621b5e4b",
+  "generated_at": "2026-08-08T01:59:39.123878Z",
+  "source_sha256": "1916badc15a8b5815d82d96fe4458206a197929a9b469830bcd4cea679d6dffc",
   "sources": [
     "brand/logo/png/icon-192w.png",
     "docs/develop/arquitetura.md",
@@ -41,11 +41,11 @@
   "artifacts": {
     "pdf": {
       "file": "Companify-Documentacao-Completa-v0.1.0.pdf",
-      "sha256": "7ad60df48ea1280a80b2dda9f335b2745728e92fefb7dcea3b52b3d6eae2b8fd"
+      "sha256": "d45f971cbc987c0e8f4c14907d231f21a8b72ef9cebdf3b6c2e69c632663516a"
     },
     "epub": {
       "file": "Companify-Documentacao-Completa-v0.1.0.epub",
-      "sha256": "3fcde850f29e6483927bc1ba6612748c892f39a6de05d211bba18abc93a77392"
+      "sha256": "ac927b955531640667e656a37517653ac33d392fe651734e3a40da0c1c5ce916"
     }
   }
 }

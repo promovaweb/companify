@@ -21,9 +21,9 @@ function parseFrontmatterField(source, field) {
   return match ? match[1].trim() : null;
 }
 
-test("expõe as 17 skills do MVP", async () => {
+test("expõe as 17 skills do MVP mais o assistente de entrada rápida", async () => {
   const names = await listSkillDirectories();
-  assert.equal(names.length, 17);
+  assert.equal(names.length, 18);
 });
 
 test("cada skill tem SKILL.md com frontmatter válido", async () => {

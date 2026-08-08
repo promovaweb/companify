@@ -25,6 +25,14 @@ feita aqui entra nas duas edições no próximo build.
 A [pasta dos ebooks](../../ebooks/) registra a edição vigente, os artefatos
 publicados e os hashes em `build.json`.
 
+## Atalho para quem não quer aprender a arquitetura primeiro
+
+Se você não conhece o Companify e só quer um primeiro plano rápido, pule o
+percurso completo abaixo e use `$companify-assistente`: uma conversa em
+linguagem simples, sem jargão, que já roda a instalação nos bastidores.
+Volte para o percurso completo quando quiser profundidade em uma área
+específica ou passar pela esteira inteira.
+
 ## Percurso recomendado
 
 Comece pela [instalação](instalacao.md) e confirme que as skills aparecem no

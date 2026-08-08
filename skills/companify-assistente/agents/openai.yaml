@@ -1,0 +1,4 @@
+interface:
+  display_name: "Assistente do Companify"
+  short_description: "Guia rápido em linguagem simples até um plano enxuto"
+  default_prompt: "Use $companify-assistente para me ajudar a montar minha empresa, em linguagem simples."

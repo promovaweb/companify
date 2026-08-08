@@ -171,6 +171,7 @@ Cenário agressivo: R$ 200
 
 ```text
 skills/
+  companify-assistente/
   companify-builder/
   companify-setup/
   companify-interview/
@@ -280,7 +281,13 @@ divergentes. Use a tabela abaixo para localizar cada assunto.
 
 ## 32. MVP e extensões futuras
 
-As 17 skills listadas na seção 6 compõem o MVP. Extensões futuras, como
+As 17 skills listadas na seção 6 compõem o MVP. `companify-assistente` foi
+adicionada depois como porta de entrada conversacional para usuários leigos:
+traduz os especialistas para linguagem simples, roda `companify-setup` nos
+bastidores e prioriza um primeiro plano enxuto em uma conversa só, em vez da
+esteira completa. Ela não substitui `companify-builder`; encaminha para ele
+quando o usuário pedir explicitamente a esteira completa. Extensões futuras,
+como
 `companify-investor`, `companify-fundraising`, `companify-mna`,
 `companify-international`, `companify-franchise`, `companify-saas`,
 `companify-marketplace`, `companify-ecommerce`, `companify-agency`,
