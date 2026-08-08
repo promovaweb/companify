@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "version": "0.1.0",
+  "edition": "v0.1.0",
+  "generated_at": "2026-08-08T01:25:05.059402Z",
+  "source_sha256": "d383563cddcbde1270d699995d59f87ec1168b1665938b53d735a353c09badd7",
+  "sources": [
+    "docs/develop/arquitetura.md",
+    "docs/develop/artefatos.md",
+    "docs/develop/contrato-das-skills.md",
+    "docs/develop/contribuicao.md",
+    "docs/develop/README.md",
+    "docs/develop/testes.md",
+    "docs/reading-order.txt",
+    "docs/README.md",
+    "docs/specification.md",
+    "docs/user/auditoria.md",
+    "docs/user/board-e-escolhas.md",
+    "docs/user/conceitos.md",
+    "docs/user/conselho-executivo.md",
+    "docs/user/entrevista-e-contexto.md",
+    "docs/user/instalacao.md",
+    "docs/user/plano-de-negocio.md",
+    "docs/user/primeiro-plano.md",
+    "docs/user/README.md",
+    "docs/user/relacao-com-brandfy.md",
+    "docs/user/solucao-de-problemas.md",
+    ".ebook/build-ebook.sh",
+    ".ebook/epub.css",
+    ".ebook/external-links.lua",
+    ".ebook/fonts/inter-latin.woff2",
+    ".ebook/fonts/manrope-latin.woff2",
+    ".ebook/fonts/OFL-Inter.txt",
+    ".ebook/fonts/OFL-Manrope.txt",
+    ".ebook/metadata.yaml",
+    ".ebook/pdf.css",
+    "ebooks/VERSION",
+    ".ebook/template.html"
+  ],
+  "artifacts": {
+    "pdf": {
+      "file": "Companify-Documentacao-Completa-v0.1.0.pdf",
+      "sha256": "db875f7175f74900c3c4622306bee49925bc4d16879cd5c71785f086fdf65596"
+    },
+    "epub": {
+      "file": "Companify-Documentacao-Completa-v0.1.0.epub",
+      "sha256": "e30f700b6e8020e55bb9c3acdd69e988a289f79c0834fcdf41719605c9345e69"
+    }
+  }
+}

@@ -59,6 +59,20 @@ premium), o Companify registra a tensão em `.companify/escolhas.md` e
 encaminha a mudança à skill `brandfy-estrategia` correspondente, em vez de
 resolver a questão sozinho.
 
+## Documentação
+
+A documentação oficial separa o uso da biblioteca e a manutenção do
+repositório:
+
+- [`docs/user/`](docs/user/) acompanha instalação, conceitos, o primeiro
+  plano de negócio, entrevista, conselho executivo, board, plano de negócio,
+  auditoria, relação com o Brandfy e solução de problemas.
+- [`docs/develop/`](docs/develop/) descreve arquitetura, o contrato das
+  skills, os artefatos, os testes e a contribuição.
+
+Os dois percursos, mais a especificação completa como apêndice, são
+compilados em um PDF e um EPUB dentro de [`ebooks/`](ebooks/).
+
 ## Estado do projeto
 
 Este repositório está na primeira versão publicada, com as 17 skills do MVP

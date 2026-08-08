@@ -8,6 +8,8 @@
   },
   "scripts": {
     "test": "node --test tests/*.test.mjs",
-    "setup:example": "node skills/companify-setup/scripts/setup.mjs --project example"
+    "setup:example": "node skills/companify-setup/scripts/setup.mjs --project example",
+    "ebook": "bash .ebook/build-ebook.sh",
+    "ebook:verify": "bash .ebook/build-ebook.sh --check"
   }
 }
