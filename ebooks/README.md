@@ -19,6 +19,11 @@ Companify-Documentacao-Completa-v<versão>.pdf
 Companify-Documentacao-Completa-v<versão>.epub
 ```
 
+Para links permanentes, use os aliases da edição mais recente:
+
+- [PDF vigente](ebook-companify.pdf): `ebook-companify.pdf`;
+- [EPUB vigente](ebook-companify.epub): `ebook-companify.epub`.
+
 [`build.json`](build.json) registra a versão, o digest das fontes e os hashes
 dos dois arquivos.
 
