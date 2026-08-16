@@ -8,9 +8,12 @@ description: Define a tese empresarial e a direção estratégica integrada. Use
 ## Protocolo operacional
 
 - **Plano e progresso:** planejar tese, objetivos, prioridades e alocação de
-  recursos antes de integrar as demais análises.
+  recursos antes de integrar as demais análises. Registrar em
+  `.companify/progresso.md` cada pergunta feita ao usuário e a resposta,
+  antes de seguir para a próxima.
 - **Fontes de verdade:** ler `.companify/company-context.md`,
-  `company/market.md`, `company/business-model.md` e, quando já produzidos,
+  `.companify/progresso.md`, `company/market.md`, `company/business-model.md`
+  e, quando já produzidos,
   `company/product.md`, `company/technology.md`, `company/marketing.md`,
   `company/revenue.md`, `company/finance.md`, `company/operations.md`,
   `company/people.md` e `company/ameacas.md`.
@@ -26,11 +29,15 @@ description: Define a tese empresarial e a direção estratégica integrada. Use
 
 Use o [worksheet de tese empresarial](references/strategy-worksheet.md) para
 registrar respostas, objetivos, trade-offs e tensões antes de integrar as
-demais análises.
+demais análises. Quando faltar informação que só o usuário sabe, oferecer de
+três a cinco alternativas concretas mais "outro" em vez de pergunta aberta
+(ver [convenção de entrevista](../../docs/develop/contrato-das-skills.md#entrevista-e-progresso)).
 
 1. Responder às perguntas fundamentais: por que essa empresa deveria existir?
    Que problema relevante ela resolve? Por que agora? Para quem? Como
-   pretende vencer? Como captura valor? Onde deve concentrar recursos? O que
+   pretende vencer? Como captura valor? Como ela será operada (pessoas,
+   agentes de IA ou híbrida, conforme `.companify/company-context.md`) e
+   por que essa escolha, não outra? Onde deve concentrar recursos? O que
    deliberadamente não fará? Que ameaças podem invalidar a tese?
 2. Definir objetivos de 12 meses, 3 anos e 5 anos coerentes com o estágio
    registrado em `.companify/config.yaml`.

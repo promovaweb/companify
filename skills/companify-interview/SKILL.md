@@ -8,10 +8,13 @@ description: Conduz a descoberta empresarial progressiva. Use para preencher lac
 ## Protocolo operacional
 
 - **Plano e progresso:** planejar quais dimensões têm lacuna relevante antes
-  de perguntar, e atualizar `.companify/interview.md` a cada resposta.
+  de perguntar, e atualizar `.companify/interview.md` e
+  `.companify/progresso.md` a cada resposta, antes de fazer a pergunta
+  seguinte.
 - **Fontes de verdade:** ler `.companify/config.yaml`,
-  `.companify/company-context.md`, `.companify/interview.md` e o contexto
-  Brandfy (`brand/strategy.md`, `brand/voice.md`) quando existente.
+  `.companify/company-context.md`, `.companify/interview.md`,
+  `.companify/progresso.md` e o contexto Brandfy (`brand/strategy.md`,
+  `brand/voice.md`) quando existente.
 - **Escopo e idempotência:** nunca substituir uma resposta já confirmada por
   uma inferência. Uma pergunta respondida não é reaberta sem nova comprovação.
 - **Validação:** cada resposta é classificada como fato, comprovação,
@@ -24,16 +27,19 @@ description: Conduz a descoberta empresarial progressiva. Use para preencher lac
 
 1. Ler o Company Context atual e identificar quais dimensões têm campo em
    branco: origem da ideia, problema, solução, público, cliente, produto,
-   diferenciais, concorrência, modelo atual, receita, custos, canais,
-   operação, tecnologia, equipe, recursos, objetivos, restrições, ameaças,
-   comprovações.
+   diferenciais, concorrência, modelo atual, modelo de operação (humana,
+   agentes de IA ou híbrida), receita, custos, canais, operação, tecnologia,
+   equipe, recursos, objetivos, restrições, ameaças, comprovações.
 2. Priorizar as perguntas que alteram significativamente o negócio: uma
    lacuna que muda a tese (por exemplo, quem tem o problema) vem antes de uma
    lacuna cosmética (por exemplo, nome fantasia de um fornecedor).
 3. Perguntar uma dimensão por vez, sem aplicar as ~70 perguntas possíveis de
    uma vez. Uma empresa em estágio `idea` precisa de profundidade em
    problema/solução/público; uma empresa em `growth` precisa de profundidade
-   em tração/aquisição/operação.
+   em tração/aquisição/operação. Reservar texto livre para o que só o
+   usuário sabe (ideia, nome, número real); quando a resposta couber em
+   alternativas concretas, oferecer de três a cinco opções mais "outro" (ver
+   [convenção de entrevista](../../docs/develop/contrato-das-skills.md#entrevista-e-progresso)).
 4. Classificar cada resposta em [`FATO`, `COMPROVAÇÃO`, `DECLARAÇÃO DO
    USUÁRIO`, `CONTEXTO BRANDFY`, `INFERÊNCIA`, `HIPÓTESE`, `PREMISSA`] e
    registrar em `.companify/interview.md`.

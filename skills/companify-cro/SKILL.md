@@ -9,9 +9,11 @@ description: Define o sistema de geração de receita. Use para estruturar compa
 
 - **Plano e progresso:** planejar o funil lead → oportunidade → venda →
   ativação → retenção → expansão antes de escrever o artefato final.
-- **Fontes de verdade:** ler `company/business-model.md`,
-  `company/marketing.md` e, quando já produzido, `company/finance.md` para o
-  CAC máximo sustentável.
+  Registrar em `.companify/progresso.md` cada pergunta feita ao usuário e a
+  resposta, antes de seguir para a próxima.
+- **Fontes de verdade:** ler `.companify/progresso.md`,
+  `company/business-model.md`, `company/marketing.md` e, quando já
+  produzido, `company/finance.md` para o CAC máximo sustentável.
 - **Escopo e idempotência:** pricing lidera com CFO, CPO e CMO consultados :
   não decidir preço isoladamente.
 - **Validação:** cada métrica de receita usada (MRR, ARR, ARPA, ACV, win
@@ -23,7 +25,10 @@ description: Define o sistema de geração de receita. Use para estruturar compa
 ## Fluxo
 
 Use o [worksheet do sistema de receita](references/revenue-worksheet.md) para
-registrar o funil, o pricing e os canais comerciais.
+registrar o funil, o pricing e os canais comerciais. Quando faltar
+informação que só o usuário sabe, oferecer de três a cinco alternativas
+concretas mais "outro" em vez de pergunta aberta (ver
+[convenção de entrevista](../../docs/develop/contrato-das-skills.md#entrevista-e-progresso)).
 
 1. Descrever o funil completo: lead → oportunidade → venda → ativação →
    retenção → expansão, com as taxas de conversão conhecidas ou modeladas

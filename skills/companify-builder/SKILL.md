@@ -10,13 +10,15 @@ description: Coordena a construção ou revisão completa do plano de negócio. 
 - **Plano e progresso:** criar um plano com os marcos da esteira e os quatro
   gates, atualizando o estado após cada aceite.
 - **Fontes de verdade:** ler `.companify/config.yaml`,
-  `.companify/company-context.md`, os artefatos existentes em `company/`,
-  `.brandfy/config.yaml` e `brand/strategy.md` quando existentes, e
-  [gates.md](references/gates.md).
-- **Escopo e idempotência:** retomar o estado registrado, preservar
-  artefatos aprovados. Uma empresa existente pode pular etapas já
-  suficientemente documentadas: a comprovação do que já existe justifica o
-  salto.
+  `.companify/company-context.md`, `.companify/progresso.md`, os artefatos
+  existentes em `company/`, `.brandfy/config.yaml` e `brand/strategy.md`
+  quando existentes, e [gates.md](references/gates.md).
+- **Escopo e idempotência:** retomar o estado registrado em
+  `.companify/progresso.md`, preservar artefatos aprovados. Uma empresa
+  existente pode pular etapas já suficientemente documentadas: a
+  comprovação do que já existe justifica o salto. O builder não substitui a
+  entrevista de nenhuma skill especializada: ele decide a ordem, cada
+  especialista pergunta.
 - **Validação:** não avançar de um gate ao seguinte com item pendente sem
   justificativa registrada.
 - **Resumo final:** registrar artefatos produzidos, gates concluídos,

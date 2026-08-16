@@ -9,7 +9,7 @@ precisa deles.
 `SKILL.md` começa com frontmatter que declara `name` e `description`. O
 nome precisa corresponder ao diretório. A descrição deve ter entre 90 e 160
 caracteres, informar a tarefa e a sinalização de uso com extensão
-suficiente para o agente selecionar a skill entre as 17 disponíveis.
+suficiente para o agente selecionar a skill entre as 18 disponíveis.
 
 ```yaml
 ---
@@ -29,6 +29,43 @@ uma recomendação com comprovação ou premissa explícita. Um adjetivo vago n�
 substitui a explicação: uma arquitetura descrita como "moderna" deve mostrar
 a composição, o custo, a limitação e a relação com o estágio real da
 empresa.
+
+## Entrevista e progresso
+
+Toda skill que precisa de resposta do usuário para preencher o próprio
+artefato (`companify-interview`, `companify-market`,
+`companify-business-model`, `companify-ceo`, `companify-cpo`,
+`companify-cto`, `companify-cmo`, `companify-cro`, `companify-cfo`,
+`companify-coo`, `companify-chro`, `companify-ameacas`, `companify-board`,
+`companify-business-plan`, `companify-audit`) segue duas regras, seja
+acionada sozinha ou dentro da esteira de `$companify-builder`:
+
+1. **Pergunta simples, de escolha fácil.** O usuário só digita texto livre
+   quando a informação for exclusiva da empresa dele e nenhuma outra
+   pessoa poderia responder por ele: a ideia em uma frase, o nome da
+   empresa, um número real que só ele sabe (preço já cobrado, receita
+   atual). Para tudo o que a skill consegue gerar a partir do que já sabe
+   sobre o negócio, mercado e categoria, ela gera de três a cinco
+   alternativas concretas mais "outro (você escreve)" e pergunta qual se
+   aplica, em vez de devolver a pergunta em branco para o usuário
+   preencher. Uma pergunta técnica nunca aparece sem tradução para quem
+   não conhece o vocabulário da área.
+2. **Progresso salvo a cada resposta.** Ler e atualizar
+   [`.companify/progresso.md`](../../skills/companify-setup/references/progresso-template.md)
+   assim que o usuário responder, nunca só ao final da conversa: a skill
+   grava a própria linha na tabela de perguntas e o status da própria área
+   antes de fazer a pergunta seguinte. Ao ser retomada, a skill lê esse
+   arquivo antes de perguntar qualquer coisa e continua da última linha
+   pendente da própria área, sem repetir pergunta já respondida. Nenhuma
+   skill mantém um arquivo de progresso paralelo e próprio; `.companify/progresso.md`
+   é compartilhado por todas.
+
+`$companify-builder` não faz perguntas genéricas por conta própria: ele
+sequencia as skills especializadas conforme os gates e cada uma conduz a
+própria entrevista de múltipla escolha. `$companify-setup` cria
+`.companify/progresso.md` por padrão e também é responsável por adicionar
+campos ausentes em arquivos já existentes quando um template evoluir, sem
+sobrescrever o que o usuário já preencheu.
 
 ## Metadados para o agente
 

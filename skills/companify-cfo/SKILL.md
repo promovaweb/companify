@@ -8,9 +8,12 @@ description: Transforma a estratégia em consequências financeiras. Use para es
 ## Protocolo operacional
 
 - **Plano e progresso:** planejar receita, custos, margem, caixa e cenários
-  antes de escrever o artefato final.
-- **Fontes de verdade:** ler `company/business-model.md`,
-  `company/revenue.md` e `company/operations.md` quando já produzidos.
+  antes de escrever o artefato final. Registrar em `.companify/progresso.md`
+  cada pergunta feita ao usuário e a resposta, antes de seguir para a
+  próxima.
+- **Fontes de verdade:** ler `.companify/progresso.md`,
+  `company/business-model.md`, `company/revenue.md` e `company/operations.md`
+  quando já produzidos.
 - **Escopo e idempotência:** não substituir aconselhamento contábil,
   tributário ou financeiro profissional: modelar a estrutura, não emitir
   parecer fiscal.
@@ -20,6 +23,11 @@ description: Transforma a estratégia em consequências financeiras. Use para es
   premissas críticas ainda não validadas.
 
 ## Fluxo
+
+Quando faltar informação que só o usuário sabe (um número real que ainda
+não está documentado em `company/`), oferecer de três a cinco alternativas
+concretas mais "outro" em vez de pergunta aberta (ver
+[convenção de entrevista](../../docs/develop/contrato-das-skills.md#entrevista-e-progresso)).
 
 1. Classificar cada número usado como `REALIZADO`, `CONTRATADO`, `ESTIMADO`,
    `PREMISSA` ou `CENÁRIO`: nunca misturar as categorias sem rótulo.

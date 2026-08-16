@@ -7,6 +7,7 @@
 | `config.yaml` | Nome, país, idioma, moeda, estágio e caminhos configuráveis | `companify-setup` |
 | `company-context.md` | Visão única da empresa compartilhada por todas as skills | `companify-interview`, atualizado por qualquer skill |
 | `interview.md` | Lacunas abertas e respostas confirmadas, classificadas pela taxonomia | `companify-interview` |
+| `progresso.md` | Histórico de pergunta/resposta e status de cada área do plano; toda skill que entrevista o usuário lê e atualiza este arquivo para retomar sem repetir pergunta já respondida | Compartilhado; nenhuma skill mantém progresso próprio e paralelo |
 | `assumptions.md` | Registro `ASS-NNN` de premissas críticas e experimentos | Qualquer skill registra; nenhuma cura sozinha |
 | `escolhas.md` | Registro `ESC-NNN` de escolhas do conselho | Qualquer skill registra; `companify-board` cura conflitos e resoluções |
 | `comprovacoes.md` | Fonte, data e o que cada comprovação sustenta | Compartilhado |
@@ -28,7 +29,7 @@
 | `revenue.md` | `companify-cro` |
 | `finance.md` | `companify-cfo` |
 | `operations.md` | `companify-coo` |
-| `people.md` | `companify-chro` |
+| `people.md` | `companify-chro`; cobre sequência de contratação (papel humano) ou de ativação (papel executado por agente de IA), conforme o "Modelo de operação" do Company Context |
 | `ameacas.md` | `companify-ameacas` |
 | `roadmap.md` | `companify-business-plan`, consolidando os roadmaps setoriais que cada C-level já registra na própria área |
 | `business-plan.md` | `companify-business-plan` |

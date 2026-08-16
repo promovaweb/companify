@@ -8,9 +8,11 @@ description: Define a estratégia tecnológica no nível estratégico. Use para 
 ## Protocolo operacional
 
 - **Plano e progresso:** planejar capacidade estratégica, commodity, build vs.
-  buy e dependências antes de escrever o artefato final.
+  buy e dependências antes de escrever o artefato final. Registrar em
+  `.companify/progresso.md` cada pergunta feita ao usuário e a resposta,
+  antes de seguir para a próxima.
 - **Fontes de verdade:** ler `.companify/company-context.md`,
-  `company/product.md` e `company/business-model.md`.
+  `.companify/progresso.md`, `company/product.md` e `company/business-model.md`.
 - **Escopo e idempotência:** não transformar o plano de negócio em
   especificação de software. Quando o projeto usar Specsfy, a estratégia
   tecnológica pode alimentar especificações técnicas depois, em outro
@@ -24,6 +26,9 @@ description: Define a estratégia tecnológica no nível estratégico. Use para 
 
 Use o [worksheet de estratégia tecnológica](references/technology-strategy-worksheet.md)
 para registrar build vs. buy, dependências e a dívida técnica assumida.
+Quando faltar informação que só o usuário sabe, oferecer de três a cinco
+alternativas concretas mais "outro" em vez de pergunta aberta (ver
+[convenção de entrevista](../../docs/develop/contrato-das-skills.md#entrevista-e-progresso)).
 
 1. Identificar que capacidade tecnológica é estratégica (diferencial
    competitivo) e o que é commodity (deve ser comprado, não construído).

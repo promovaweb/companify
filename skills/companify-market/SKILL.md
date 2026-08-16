@@ -8,10 +8,12 @@ description: Analisa mercado, segmentos, ICP e concorrência. Use para estrutura
 ## Protocolo operacional
 
 - **Plano e progresso:** planejar categoria, segmentos, concorrência e
-  dimensionamento antes de escrever o artefato final.
+  dimensionamento antes de escrever o artefato final. Registrar em
+  `.companify/progresso.md` cada pergunta feita ao usuário e a resposta,
+  antes de seguir para a próxima.
 - **Fontes de verdade:** ler `.companify/company-context.md`,
-  `.companify/interview.md`, comprovações em `.companify/comprovacoes.md` e
-  `brand/strategy.md` quando existente.
+  `.companify/interview.md`, `.companify/progresso.md`, comprovações em
+  `.companify/comprovacoes.md` e `brand/strategy.md` quando existente.
 - **Escopo e idempotência:** preservar hipóteses já validadas; uma nova
   pesquisa complementa, não apaga, achados anteriores sem justificativa.
 - **Validação:** toda alegação sobre tamanho de mercado, concorrente ou
@@ -22,12 +24,20 @@ description: Analisa mercado, segmentos, ICP e concorrência. Use para estrutura
 ## Fluxo
 
 Use o [worksheet de mercado](references/market-worksheet.md) para conduzir a
-análise campo a campo antes de escrever o artefato final.
+análise campo a campo antes de escrever o artefato final. Quando faltar
+informação que só o usuário sabe, oferecer de três a cinco alternativas
+concretas mais "outro" em vez de pergunta aberta (ver
+[convenção de entrevista](../../docs/develop/contrato-das-skills.md#entrevista-e-progresso)).
 
 1. Definir categoria e o mercado relevante a partir do problema descrito no
    Company Context.
-2. Mapear segmentos e estruturar o ICP; diferenciar usuário, comprador e
-   decisor quando forem pessoas ou papéis diferentes.
+2. Antes de perguntar quem é o cliente, ler `## Cliente` em
+   `.companify/company-context.md`. Se já houver Público, Segmentos ou ICP
+   preenchidos, apresentar como confirmação ("ainda é isso, ou mudou?") em
+   vez de repetir a pergunta em aberto; só perguntar do zero o que
+   realmente está em branco. Mapear segmentos e estruturar o ICP;
+   diferenciar usuário, comprador e decisor quando forem pessoas ou papéis
+   diferentes.
 3. Mapear personas econômicas quando necessário (ex.: comprador B2B com
    orçamento próprio vs. usuário final sem poder de compra).
 4. Levantar alternativas atuais do cliente (incluindo "não fazer nada" e

@@ -15,6 +15,19 @@ const skillDir = path.resolve(scriptDir, "..");
 const repositoryRoot = path.resolve(skillDir, "../..");
 const startMarker = "<!-- companify:consumer:start -->";
 const endMarker = "<!-- companify:consumer:end -->";
+const markdownFencePattern = /```markdown\n([\s\S]*?)\n```/;
+
+async function loadTemplate(referenceFileName) {
+  const templatePath = path.join(skillDir, "references", referenceFileName);
+  const source = await readFile(templatePath, "utf8");
+  const match = source.match(markdownFencePattern);
+
+  if (!match) {
+    throw new Error(`Bloco \`\`\`markdown ausente em ${referenceFileName}.`);
+  }
+
+  return `${match[1]}\n`;
+}
 
 const DEFAULT_CONFIG = `version: 1
 
@@ -29,121 +42,6 @@ paths:
   workspace: .companify
   output: company
   brand: brand
-`;
-
-const DEFAULT_COMPANY_CONTEXT = `# Company Context
-
-## Empresa
-
-Nome:
-Estágio:
-País:
-Mercado:
-Tipo de negócio:
-
-## Fundadores
-
-Fundadores:
-Experiência:
-Competências:
-
-## Problema
-
-Problema:
-Quem possui o problema:
-Frequência:
-Intensidade:
-Comprovações:
-
-## Solução
-
-Solução:
-Produto:
-Serviço:
-Estado atual:
-
-## Cliente
-
-Público:
-Segmentos:
-ICP:
-Usuários:
-Compradores:
-
-## Oferta
-
-Oferta atual:
-Preço:
-Forma de cobrança:
-
-## Receita
-
-Modelo atual:
-Receita atual:
-Receita recorrente:
-Clientes:
-
-## Tração
-
-Usuários:
-Clientes:
-Receita:
-Crescimento:
-Retenção:
-Outras comprovações:
-
-## Aquisição
-
-Canais atuais:
-Conversão:
-CAC conhecido:
-
-## Operação
-
-Equipe:
-Parceiros:
-Recursos:
-Processos críticos:
-
-## Tecnologia
-
-Stack:
-Infraestrutura:
-Dependências:
-Integrações:
-
-## Objetivos
-
-12 meses:
-3 anos:
-5 anos:
-
-## Restrições
-
-Capital:
-Equipe:
-Prazo:
-Regulação:
-Tecnologia:
-
-## Brandfy
-
-Propósito:
-Missão:
-Visão:
-Valores:
-Posicionamento:
-Públicos:
-Promessa:
-Personalidade:
-
-## Premissas
-
-Pendente.
-
-## Pendências
-
-Pendente.
 `;
 
 const DEFAULT_INTERVIEW = `# Entrevista empresarial
@@ -219,17 +117,162 @@ de responsabilidades.
 
 const DIRECTORIES = [".companify/reviews", "company"];
 
-const FILES = [
-  [".companify/config.yaml", DEFAULT_CONFIG],
-  [".companify/company-context.md", DEFAULT_COMPANY_CONTEXT],
-  [".companify/interview.md", DEFAULT_INTERVIEW],
-  [".companify/assumptions.md", DEFAULT_ASSUMPTIONS],
-  [".companify/escolhas.md", DEFAULT_ESCOLHAS],
-  [".companify/comprovacoes.md", DEFAULT_COMPROVACOES],
-  [".companify/metrics.md", DEFAULT_METRICS],
-  [".companify/ameacas.md", DEFAULT_AMEACAS],
-  ["company/README.md", DEFAULT_COMPANY_README],
+// Arquivos cujo conteúdo padrão vive na própria referência (fonte única,
+// conferida por `syncTemplatedFiles`); os demais só têm conteúdo inicial
+// fixo, sem seção que precise evoluir depois.
+const TEMPLATED_FILES = [
+  [".companify/company-context.md", "company-context-template.md"],
+  [".companify/progresso.md", "progresso-template.md"],
 ];
+
+async function buildFiles() {
+  const templated = await Promise.all(
+    TEMPLATED_FILES.map(async ([relativePath, referenceFileName]) => [
+      relativePath,
+      await loadTemplate(referenceFileName),
+    ]),
+  );
+
+  return [
+    [".companify/config.yaml", DEFAULT_CONFIG],
+    ...templated,
+    [".companify/interview.md", DEFAULT_INTERVIEW],
+    [".companify/assumptions.md", DEFAULT_ASSUMPTIONS],
+    [".companify/escolhas.md", DEFAULT_ESCOLHAS],
+    [".companify/comprovacoes.md", DEFAULT_COMPROVACOES],
+    [".companify/metrics.md", DEFAULT_METRICS],
+    [".companify/ameacas.md", DEFAULT_AMEACAS],
+    ["company/README.md", DEFAULT_COMPANY_README],
+  ];
+}
+
+const sectionHeadingPattern = /^## .+$/gm;
+// Uma linha "Rótulo:" de campo preenchível, não uma linha de tabela (`|`),
+// de heading (`#`) ou em branco.
+const fieldLinePattern = /^([^\s:#|][^:\n]{0,120}):(?:\s|$)/;
+
+function sectionBody(content, heading) {
+  const start = content.indexOf(heading);
+  const rest = content.slice(start + heading.length);
+  const nextHeading = rest.search(sectionHeadingPattern);
+  const body = nextHeading === -1 ? rest : rest.slice(0, nextHeading);
+  return `${heading}${body}`.trimEnd();
+}
+
+/**
+ * Mapa heading (`## Título`) → corpo da seção (tudo até o próximo heading
+ * ou o fim do texto), na ordem em que aparecem no documento.
+ */
+function sectionMap(content) {
+  const headings = [...content.matchAll(sectionHeadingPattern)];
+  const map = new Map();
+
+  headings.forEach((match, index) => {
+    const start = match.index + match[0].length;
+    const end = index + 1 < headings.length ? headings[index + 1].index : content.length;
+    map.set(match[0], content.slice(start, end));
+  });
+
+  return map;
+}
+
+function fieldLabels(sectionBodyText) {
+  return sectionBodyText
+    .split("\n")
+    .map((line) => line.match(fieldLinePattern))
+    .filter(Boolean)
+    .map((match) => match[1].trim());
+}
+
+/**
+ * Sincroniza um arquivo já existente com o template atual, em duas
+ * granularidades: acrescenta ao fim uma seção `## ` inteira que o template
+ * tem e o arquivo não tem, e acrescenta ao fim de uma seção já existente
+ * (mas comum às duas versões) os campos `Rótulo:` que o template tem e a
+ * seção do arquivo ainda não tem. Nunca remove, reordena ou reescreve uma
+ * seção ou campo já preenchido pelo usuário.
+ */
+function syncTemplatedContent(existingContent, templateContent) {
+  const templateSections = sectionMap(templateContent);
+  const existingSections = sectionMap(existingContent);
+
+  if (existingSections.size === 0) {
+    return { content: existingContent, addedSections: [], addedFields: [] };
+  }
+
+  const firstHeadingIndex = existingContent.search(sectionHeadingPattern);
+  const preamble = existingContent.slice(0, firstHeadingIndex);
+  const addedFields = [];
+
+  const rebuiltSections = [...existingSections.entries()].map(([heading, body]) => {
+    const templateBody = templateSections.get(heading);
+    if (!templateBody) {
+      return `${heading}${body}`;
+    }
+
+    const existingLabels = new Set(fieldLabels(body));
+    const linesToAdd = templateBody.split("\n").filter((line) => {
+      const match = line.match(fieldLinePattern);
+      return match && !existingLabels.has(match[1].trim());
+    });
+
+    if (linesToAdd.length === 0) {
+      return `${heading}${body}`;
+    }
+
+    addedFields.push(
+      ...linesToAdd.map((line) => `${heading.replace(/^## /, "")}: ${line.match(fieldLinePattern)[1].trim()}`),
+    );
+
+    return `${heading}${body.trimEnd()}\n${linesToAdd.join("\n")}\n`;
+  });
+
+  const missingHeadings = [...templateSections.keys()].filter(
+    (heading) => !existingSections.has(heading),
+  );
+
+  let content = `${preamble}${rebuiltSections.join("")}`;
+
+  if (missingHeadings.length > 0) {
+    const appended = missingHeadings
+      .map((heading) => sectionBody(templateContent, heading))
+      .join("\n\n");
+    content = `${content.trimEnd()}\n\n${appended}\n`;
+  }
+
+  return { content, addedSections: missingHeadings, addedFields };
+}
+
+async function syncTemplatedFiles(projectRoot, files) {
+  const updates = [];
+
+  for (const [relativePath, referenceFileName] of TEMPLATED_FILES) {
+    const target = path.join(projectRoot, relativePath);
+    if (!(await exists(target))) {
+      continue;
+    }
+
+    const [, templateContent] = files.find(([entryPath]) => entryPath === relativePath);
+    const existingContent = await readFile(target, "utf8");
+    const { content, addedSections, addedFields } = syncTemplatedContent(
+      existingContent,
+      templateContent,
+    );
+
+    if (addedSections.length > 0 || addedFields.length > 0) {
+      updates.push({
+        target,
+        content,
+        relativePath,
+        addedSections,
+        addedFields,
+        referenceFileName,
+      });
+    }
+  }
+
+  return updates;
+}
 
 function parseArguments(argv) {
   const options = { project: ".", check: false };
@@ -287,7 +330,7 @@ function mergeAgents(existing, block) {
   return `${existing.slice(0, start)}${block}${existing.slice(end + endMarker.length)}`;
 }
 
-async function expectedChanges(projectRoot, block) {
+async function expectedChanges(projectRoot, block, files) {
   const missing = [];
 
   for (const directory of DIRECTORIES) {
@@ -296,9 +339,18 @@ async function expectedChanges(projectRoot, block) {
     }
   }
 
-  for (const [relativePath] of FILES) {
+  for (const [relativePath] of files) {
     if (!(await exists(path.join(projectRoot, relativePath)))) {
       missing.push(`arquivo ${relativePath}`);
+    }
+  }
+
+  for (const update of await syncTemplatedFiles(projectRoot, files)) {
+    for (const heading of update.addedSections) {
+      missing.push(`seção ${heading.replace(/^## /, "")} em ${update.relativePath}`);
+    }
+    for (const field of update.addedFields) {
+      missing.push(`campo ${field} em ${update.relativePath}`);
     }
   }
 
@@ -318,7 +370,8 @@ async function main() {
   const options = parseArguments(process.argv.slice(2));
   const projectRoot = path.resolve(options.project);
   const block = await loadConsumerBlock();
-  const state = await expectedChanges(projectRoot, block);
+  const files = await buildFiles();
+  const state = await expectedChanges(projectRoot, block, files);
 
   if (options.check) {
     if (state.missing.length > 0) {
@@ -337,11 +390,19 @@ async function main() {
     await mkdir(path.join(projectRoot, directory), { recursive: true });
   }
 
-  for (const [relativePath, content] of FILES) {
+  for (const [relativePath, content] of files) {
     const target = path.join(projectRoot, relativePath);
     if (!(await exists(target))) {
       await writeFile(target, content, "utf8");
     }
+  }
+
+  for (const update of await syncTemplatedFiles(projectRoot, files)) {
+    await writeFile(update.target, update.content, "utf8");
+    console.log(
+      `Atualizado ${update.relativePath}: ${update.addedSections.length} seção(ões) e ` +
+        `${update.addedFields.length} campo(s) do template adicionado(s).`,
+    );
   }
 
   await writeFile(state.agentsPath, mergeAgents(state.agents, block), "utf8");

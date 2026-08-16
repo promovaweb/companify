@@ -8,9 +8,11 @@ description: Transforma estratégia em capacidade operacional. Use para estrutur
 ## Protocolo operacional
 
 - **Plano e progresso:** planejar processos, capacidade, fornecedores e
-  qualidade antes de escrever o artefato final.
-- **Fontes de verdade:** ler `company/product.md`, `company/technology.md` e
-  `company/finance.md` quando já produzidos.
+  qualidade antes de escrever o artefato final. Registrar em
+  `.companify/progresso.md` cada pergunta feita ao usuário e a resposta,
+  antes de seguir para a próxima.
+- **Fontes de verdade:** ler `.companify/progresso.md`, `company/product.md`,
+  `company/technology.md` e `company/finance.md` quando já produzidos.
 - **Escopo e idempotência:** não redesenhar um processo já validado sem
   comprovação de que ele deixou de funcionar.
 - **Validação:** cada processo crítico tem um dono, uma capacidade estimada
@@ -21,7 +23,10 @@ description: Transforma estratégia em capacidade operacional. Use para estrutur
 ## Fluxo
 
 Use a [checklist de operação](references/operations-checklist.md) para
-mapear o fluxo de entrega, os processos críticos e os fornecedores.
+mapear o fluxo de entrega, os processos críticos e os fornecedores. Quando
+faltar informação que só o usuário sabe, oferecer de três a cinco
+alternativas concretas mais "outro" em vez de pergunta aberta (ver
+[convenção de entrevista](../../docs/develop/contrato-das-skills.md#entrevista-e-progresso)).
 
 1. Mapear como a empresa entrega sua promessa hoje, do pedido à entrega.
 2. Identificar processos críticos, fornecedores, parceiros e recursos

@@ -8,6 +8,8 @@
 - Para quem?
 - Como pretende vencer?
 - Como captura valor?
+- Como ela será operada (pessoas, agentes de IA ou híbrida) e por que essa
+  escolha, não outra?
 - Onde deve concentrar recursos?
 - O que deliberadamente não fará?
 - Quais ameaças podem invalidar a tese?
@@ -31,13 +33,13 @@
 
 | Área | Recomendação registrada | Conflito com outra área? |
 | --- | --- | --- |
-| CPO | | |
-| CTO | | |
-| CMO | | |
-| CRO | | |
-| CFO | | |
-| COO | | |
-| CHRO | | |
+| CPO (produto) | | |
+| CTO (tecnologia) | | |
+| CMO (marketing) | | |
+| CRO (vendas e receita) | | |
+| CFO (finanças) | | |
+| COO (operação) | | |
+| CHRO (pessoas ou agentes) | | |
 | Ameaças | | |
 
 ## Regras de aceite

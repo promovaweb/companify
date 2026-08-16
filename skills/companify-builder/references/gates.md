@@ -39,6 +39,7 @@ Antes da consolidação executiva:
 [ ] CRO revisou receita
 [ ] CFO revisou finanças
 [ ] COO revisou operação
+[ ] CHRO revisou pessoas ou agentes
 [ ] ameaças relevantes registradas
 [ ] conflitos executivos analisados
 ```
@@ -117,3 +118,11 @@ comprovação) seu artefato em `company/`.
 Uma empresa existente pode pular etapas já suficientemente documentadas; a
 comprovação do que já existe deve justificar o salto, registrada por
 `companify-builder` ao decidir a sequência necessária.
+
+`companify-builder` não faz pergunta genérica por conta própria: cada skill
+da esteira conduz a própria entrevista de múltipla escolha e grava o
+progresso em `.companify/progresso.md` (ver
+[convenção de entrevista](../../../docs/develop/contrato-das-skills.md#entrevista-e-progresso)).
+O builder lê esse mesmo arquivo para saber que áreas já têm resposta antes
+de decidir a próxima skill a acionar, inclusive ao retomar uma esteira
+interrompida.

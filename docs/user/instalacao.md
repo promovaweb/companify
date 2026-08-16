@@ -14,7 +14,7 @@ Abra o terminal na raiz do projeto que receberá o plano de negócio e execute:
 npx skills add promovaweb/companify
 ```
 
-O comando instala o catálogo completo das 17 skills. O destino pode variar
+O comando instala o catálogo completo das 18 skills. O destino pode variar
 conforme o agente escolhido, e a origem, o caminho e o hash de cada skill
 ficam registrados em `skills-lock.json` do projeto consumidor.
 

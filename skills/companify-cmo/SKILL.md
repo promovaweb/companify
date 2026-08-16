@@ -8,10 +8,12 @@ description: Define geração de demanda e go-to-market. Use para estruturar com
 ## Protocolo operacional
 
 - **Plano e progresso:** planejar posicionamento comercial, canais,
-  conteúdo, campanhas e funil antes de escrever o artefato final.
+  conteúdo, campanhas e funil antes de escrever o artefato final. Registrar
+  em `.companify/progresso.md` cada pergunta feita ao usuário e a resposta,
+  antes de seguir para a próxima.
 - **Fontes de verdade:** ler `brand/strategy.md`, `brand/voice.md` e
-  `brand/manual.md` quando existentes, além de `.companify/company-context.md`
-  e `company/market.md`.
+  `brand/manual.md` quando existentes, além de `.companify/company-context.md`,
+  `.companify/progresso.md` e `company/market.md`.
 - **Escopo e idempotência:** nunca inventar uma nova personalidade ou
   posicionamento de marca porque acredita que converteria melhor. Registrar a
   tensão em `.companify/escolhas.md` e encaminhar a `brandfy-estrategia`.
@@ -24,6 +26,9 @@ description: Define geração de demanda e go-to-market. Use para estruturar com
 
 Use a [checklist de go-to-market](references/gtm-checklist.md) para registrar
 a herança do Brandfy, canais e métricas antes de escrever o artefato final.
+Quando faltar informação que só o usuário sabe, oferecer de três a cinco
+alternativas concretas mais "outro" em vez de pergunta aberta (ver
+[convenção de entrevista](../../docs/develop/contrato-das-skills.md#entrevista-e-progresso)).
 
 1. Ler `brand/strategy.md` e `brand/voice.md`: propósito, missão, visão,
    valores, posicionamento, promessa e personalidade já aprovados. O CMO usa

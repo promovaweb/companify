@@ -9,8 +9,11 @@ description: Define a lógica econômica do negócio. Use para estruturar compan
 
 - **Plano e progresso:** planejar cliente, proposta de valor, canais,
   receita, custos e vantagem competitiva antes de escrever o artefato final.
+  Registrar em `.companify/progresso.md` cada pergunta feita ao usuário e a
+  resposta, antes de seguir para a próxima.
 - **Fontes de verdade:** ler `.companify/company-context.md`,
-  `company/market.md` e `brand/strategy.md` quando existente.
+  `.companify/progresso.md`, `company/market.md` e `brand/strategy.md`
+  quando existente.
 - **Escopo e idempotência:** preservar escolhas de modelo já aprovadas;
   mudança de modelo vira `ESC-NNN` em `.companify/escolhas.md`, não
   reescrita silenciosa.
@@ -23,10 +26,16 @@ description: Define a lógica econômica do negócio. Use para estruturar compan
 ## Fluxo
 
 Use o [canvas do modelo de negócio](references/business-model-canvas.md) para
-preencher os blocos antes de escrever o artefato final.
+preencher os blocos antes de escrever o artefato final. Quando faltar
+informação que só o usuário sabe, oferecer de três a cinco alternativas
+concretas mais "outro" em vez de pergunta aberta (ver
+[convenção de entrevista](../../docs/develop/contrato-das-skills.md#entrevista-e-progresso)).
 
 1. Analisar cliente, problema e proposta de valor a partir do Company
-   Context e de `company/market.md`.
+   Context e de `company/market.md`; usar o segmento e o ICP já registrados
+   em `company/market.md` para preencher "Segmento de cliente" do canvas em
+   vez de perguntar de novo, e só perguntar o que for específico do modelo
+   de negócio (como o cliente prefere pagar, não quem ele é).
 2. Definir canais, relacionamento, fontes de receita, recursos-chave,
    atividades-chave, parceiros-chave e estrutura de custos.
 3. Escolher o arquétipo de modelo mais próximo (SaaS, marketplace,

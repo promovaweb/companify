@@ -1,9 +1,10 @@
 <!-- companify:consumer:start -->
 ## Companify no projeto
 
-O diretório `.companify/` guarda o contexto, a entrevista, as premissas, as
-escolhas, as comprovações, as métricas, as ameaças e as revisões da empresa em
-construção. O diretório `company/` guarda os artefatos empresariais
+O diretório `.companify/` guarda o contexto, a entrevista, o progresso das
+perguntas já feitas por qualquer skill (`progresso.md`), as premissas, as
+escolhas, as comprovações, as métricas, as ameaças e as revisões da empresa
+em construção. O diretório `company/` guarda os artefatos empresariais
 consolidados.
 
 Quando o usuário não conhecer o Companify ou pedir algo genérico como "me

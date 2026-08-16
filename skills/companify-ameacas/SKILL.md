@@ -8,10 +8,12 @@ description: Analisa ameaças empresariais por categoria. Use para estruturar co
 ## Protocolo operacional
 
 - **Plano e progresso:** planejar a varredura por categoria antes de
-  detalhar cada ameaça individualmente.
-- **Fontes de verdade:** ler todos os artefatos já produzidos em `company/`
-  e `.companify/assumptions.md`: premissas críticas não validadas são
-  candidatas naturais a virar ameaça registrada.
+  detalhar cada ameaça individualmente. Registrar em
+  `.companify/progresso.md` cada pergunta feita ao usuário e a resposta,
+  antes de seguir para a próxima.
+- **Fontes de verdade:** ler todos os artefatos já produzidos em `company/`,
+  `.companify/assumptions.md` e `.companify/progresso.md`: premissas críticas
+  não validadas são candidatas naturais a virar ameaça registrada.
 - **Escopo e idempotência:** não substituir especialista jurídico, contábil,
   fiscal ou de compliance; sinalizar quando uma ameaça exige essa consulta.
 - **Validação:** cada ameaça registrada tem probabilidade, impacto, sinal de
@@ -20,6 +22,10 @@ description: Analisa ameaças empresariais por categoria. Use para estruturar co
   as que exigem consulta profissional externa.
 
 ## Fluxo
+
+Quando faltar informação que só o usuário sabe, oferecer de três a cinco
+alternativas concretas mais "outro" em vez de pergunta aberta (ver
+[convenção de entrevista](../../docs/develop/contrato-das-skills.md#entrevista-e-progresso)).
 
 1. Varrer as categorias: estratégica, de mercado, de produto, tecnológica,
    financeira, operacional, de pessoas, de fornecedor, regulatória, jurídica,

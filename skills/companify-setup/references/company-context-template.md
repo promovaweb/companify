@@ -14,6 +14,7 @@ Estágio:
 País:
 Mercado:
 Tipo de negócio:
+Modelo de operação (humana / agentes de IA / híbrida):
 
 ## Fundadores
 
@@ -74,7 +75,7 @@ CAC conhecido:
 
 ## Operação
 
-Equipe:
+Equipe ou agentes atuais (ver Modelo de operação, acima, e o detalhamento em `company/people.md`):
 Parceiros:
 Recursos:
 Processos críticos:
@@ -95,7 +96,7 @@ Integrações:
 ## Restrições
 
 Capital:
-Equipe:
+Orçamento disponível para contratação ou ativação de agente:
 Prazo:
 Regulação:
 Tecnologia:
@@ -113,11 +114,11 @@ Personalidade:
 
 ## Premissas
 
-...
+Pendente.
 
 ## Pendências
 
-...
+Pendente.
 ```
 
 Preencha apenas o que houver fato, comprovação ou declaração do usuário

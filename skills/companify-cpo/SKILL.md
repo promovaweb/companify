@@ -9,8 +9,10 @@ description: Define a estratégia de produto. Use para estruturar company/produc
 
 - **Plano e progresso:** planejar problema, usuários, proposta de valor,
   princípios, hipóteses e roadmap antes de escrever o artefato final.
+  Registrar em `.companify/progresso.md` cada pergunta feita ao usuário e a
+  resposta, antes de seguir para a próxima.
 - **Fontes de verdade:** ler `.companify/company-context.md`,
-  `company/market.md` e `company/business-model.md`.
+  `.companify/progresso.md`, `company/market.md` e `company/business-model.md`.
 - **Escopo e idempotência:** preservar hipóteses de produto já testadas;
   registrar novo experimento em vez de apagar o histórico de aprendizado.
 - **Validação:** cada item do roadmap liga-se a uma hipótese, um problema ou
@@ -21,13 +23,19 @@ description: Define a estratégia de produto. Use para estruturar company/produc
 ## Fluxo
 
 Use o [canvas de estratégia de produto](references/product-strategy-canvas.md)
-para diferenciar as camadas e registrar o roadmap por hipótese.
+para diferenciar as camadas e registrar o roadmap por hipótese. Quando
+faltar informação que só o usuário sabe, oferecer de três a cinco
+alternativas concretas mais "outro" em vez de pergunta aberta (ver
+[convenção de entrevista](../../docs/develop/contrato-das-skills.md#entrevista-e-progresso)).
 
 1. Diferenciar necessidade, solução, feature, produto, experimento e aposta
    antes de escrever qualquer seção do artefato: evita confundir "lançamos
    uma feature" com "validamos uma hipótese".
 2. Descrever a visão de produto, o problema, os usuários e os jobs a partir
-   do Company Context e de `company/market.md`.
+   do Company Context e de `company/market.md`. Antes de perguntar quem são
+   os usuários, ler o que `company/market.md` já registrou em segmentos e
+   ICP: apresentar como confirmação ("o usuário principal continua sendo
+   este?") em vez de perguntar do zero algo que o mercado já respondeu.
 3. Definir a proposta de valor e os princípios de produto (o que a empresa
    prioriza sistematicamente ao decidir entre duas opções de produto).
 4. Descrever o produto atual e o MVP, quando ainda não existir produto

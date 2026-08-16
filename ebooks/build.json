@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "version": "0.1.0",
-  "edition": "v0.1.0",
-  "generated_at": "2026-08-14T23:47:36.240930Z",
-  "source_sha256": "14b8fba512772242cc0fdba0196351f8817d7d956bc522b02a251d611976f07a",
+  "version": "0.2.0",
+  "edition": "v0.2.0",
+  "generated_at": "2026-08-16T21:10:36.639488Z",
+  "source_sha256": "45a22fee93294b5a17892e7af8f0e2f42e79e9880bb60f2a862a47d0b6967df4",
   "sources": [
     ".ebook/build-ebook.sh",
     ".ebook/epub.css",
@@ -40,12 +40,12 @@
   ],
   "artifacts": {
     "pdf": {
-      "file": "Companify-Documentacao-Completa-v0.1.0.pdf",
-      "sha256": "d53536a0add538813d0a5ab97127df3e6e11dc57bae105bf108eb3b96be2de80"
+      "file": "Companify-Documentacao-Completa-v0.2.0.pdf",
+      "sha256": "e82dde177db761e91a2831abad6f74adbd2b05d2905932ac48d88f94df420a85"
     },
     "epub": {
-      "file": "Companify-Documentacao-Completa-v0.1.0.epub",
-      "sha256": "3d09547b5f30c6a2137492694a6aa2b14d1bc9a6ed451d25146eb67526ad7457"
+      "file": "Companify-Documentacao-Completa-v0.2.0.epub",
+      "sha256": "d2176ca85c5f9815d6933a19be658240d376b86c47570c639f68d320877c8f7f"
     }
   }
 }

@@ -218,6 +218,7 @@ Estado interno (`.companify/`, representa o processo):
 ├── config.yaml
 ├── company-context.md
 ├── interview.md
+├── progresso.md
 ├── assumptions.md
 ├── escolhas.md
 ├── comprovacoes.md
@@ -225,6 +226,11 @@ Estado interno (`.companify/`, representa o processo):
 ├── ameacas.md
 └── reviews/
 ```
+
+`progresso.md` é compartilhado por toda skill que pergunta algo ao usuário:
+registra pergunta, resposta e o status de cada área do plano, para retomar
+uma entrevista interrompida sem repetir pergunta já respondida (ver
+[contrato-das-skills.md](develop/contrato-das-skills.md#entrevista-e-progresso)).
 
 Artefatos empresariais (`company/`, representa o resultado):
 
@@ -249,10 +255,11 @@ company/
 ## 9. Company Context
 
 `.companify/company-context.md` é o documento central: oferece a todas as
-skills a mesma visão da empresa (empresa, fundadores, problema, solução,
-cliente, oferta, receita, tração, aquisição, operação, tecnologia, objetivos,
-restrições, contexto Brandfy, premissas e pendências). A estrutura mínima
-completa está documentada em `skills/companify-setup/references/company-context-template.md`.
+skills a mesma visão da empresa (empresa, modelo de operação — humana,
+agentes de IA ou híbrida —, fundadores, problema, solução, cliente, oferta,
+receita, tração, aquisição, operação, tecnologia, objetivos, restrições,
+contexto Brandfy, premissas e pendências). A estrutura mínima completa está
+documentada em `skills/companify-setup/references/company-context-template.md`.
 
 ## 10–27, 30–31, 36–49. Demais seções
 
@@ -307,6 +314,7 @@ brand/
 ├── config.yaml
 ├── company-context.md
 ├── interview.md
+├── progresso.md
 ├── assumptions.md
 ├── escolhas.md
 ├── comprovacoes.md

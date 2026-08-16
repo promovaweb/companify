@@ -19,6 +19,12 @@ quando não houver resposta confirmada: não invente para completar.
 
 ## ICP
 
+ICP (Ideal Customer Profile) é a descrição concreta de quem tem mais a
+ganhar comprando isso, usada para não tentar vender para todo mundo ao
+mesmo tempo. Numa venda B2B, usuário, comprador e decisor costumam ser
+pessoas diferentes; numa venda B2C, costumam ser a mesma pessoa. Nesse
+caso, preencha os três campos com a mesma resposta.
+
 - Perfil de cliente ideal (setor, tamanho, cargo, contexto):
 - Usuário (quem usa no dia a dia):
 - Comprador (quem aprova o pagamento):
@@ -32,6 +38,16 @@ quando não houver resposta confirmada: não invente para completar.
 | | | |
 
 ## TAM / SAM / SOM
+
+Três tamanhos de mercado, do maior para o mais realista: TAM (Total
+Addressable Market) é todo mundo que tem esse problema no mundo; SAM
+(Serviceable Addressable Market) é a fatia do TAM que esta empresa
+consegue de fato alcançar e atender (idioma, região, canal); SOM
+(Serviceable Obtainable Market) é a fatia do SAM que ela consegue capturar
+de verdade nos próximos 12 meses, dado o tamanho e a capacidade atuais. Uma
+empresa em estágio `idea` raramente tem dado confiável para os três: nesse
+caso, preencha como premissa (uma estimativa nomeada como estimativa, com o
+raciocínio usado) em vez de deixar em branco ou inventar um número exato.
 
 - TAM (fonte, ano, método de cálculo):
 - SAM (recorte aplicado ao TAM):

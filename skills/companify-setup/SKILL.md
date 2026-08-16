@@ -13,8 +13,13 @@ description: Prepara a configuração .companify, a árvore de artefatos company
   em `.companify/` e `company/`, `.brandfy/config.yaml` quando existir, e a
   referência [agents-consumer.md](references/agents-consumer.md).
 - **Escopo e idempotência:** preservar configurações e artefatos existentes.
-  O setup só cria arquivos e diretórios ausentes, e substitui apenas o bloco
-  Companify no `AGENTS.md`.
+  O setup só cria arquivos e diretórios ausentes, substitui apenas o bloco
+  Companify no `AGENTS.md` e, em arquivos templatizados já existentes
+  (`.companify/company-context.md`, `.companify/progresso.md`), acrescenta
+  ao fim de cada seção os campos `Rótulo:` que o template atual tem e o
+  arquivo do usuário ainda não tem, e acrescenta ao fim do arquivo as
+  seções `## ` inteiras que ainda não existem. Nunca remove, reordena ou
+  reescreve seção, campo ou valor já preenchido pelo usuário.
 - **Validação:** executar o setup com `--check` depois da escrita e revisar o
   `git diff`.
 - **Resumo final:** informar arquivos criados, arquivos preservados, estágio
@@ -42,7 +47,12 @@ description: Prepara a configuração .companify, a árvore de artefatos company
    `$companify-interview` para conduzir a descoberta e preencher
    `.companify/company-context.md` sem inventar respostas.
 6. Conferir o bloco delimitado por `companify:consumer` no `AGENTS.md`.
-7. Executar:
+7. Conferir se `.companify/progresso.md` existe e, se o projeto já tinha um
+   `.companify/` de uma versão anterior do Companify (sem esse arquivo),
+   confirmar que o setup o criou: é o arquivo que toda skill `companify-*`
+   usa para retomar uma entrevista sem repetir pergunta já respondida, veja
+   [template do progresso](references/progresso-template.md).
+8. Executar:
 
    ```bash
    node <caminho-da-skill>/scripts/setup.mjs --project . --check
