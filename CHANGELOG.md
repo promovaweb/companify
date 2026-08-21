@@ -80,3 +80,6 @@ Todas as mudanças relevantes deste projeto são documentadas neste arquivo.
   para `companify-ameacas`), `decisão`/`decisões` virou `escolha`/`escolhas`
   (registro `DEC-NNN` virou `ESC-NNN`), `evidência`/`evidências` virou
   `comprovação`/`comprovações`.
+
+[0.2.0]: https://github.com/promovaweb/companify/releases/tag/v0.2.0
+[0.1.0]: https://github.com/promovaweb/companify/releases/tag/v0.1.0
