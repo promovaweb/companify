@@ -4,6 +4,20 @@ Todas as mudanças relevantes deste projeto são documentadas neste arquivo.
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-11-13
+
+### Changed
+
+- Licença trocada de MIT para GNU AGPL 3.0 (SPDX `AGPL-3.0-only`), com o
+  texto oficial integral em `LICENSE` e o campo `license` em
+  `package.json`. A partir desta versão, o projeto é distribuído sob a GNU
+  AGPL 3.0; versões anteriores continuam sob a licença com que foram
+  publicadas.
+- README e `CONTRIBUTING.md` atualizados com a nova licença e a ressalva de
+  que ela não concede o uso do nome e do logo do Companify nem da marca
+  Promovaweb (AGPL 3.0, seção 7, item e).
+- Edição v0.3.0 do PDF e do EPUB, compilada das páginas atuais de `docs/`.
+
 ## [0.2.1] - 2026-11-13
 
 ### Changed

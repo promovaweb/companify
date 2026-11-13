@@ -214,5 +214,5 @@ O passo a passo:
 
 ## Licença
 
-O Companify é distribuído sob a licença [MIT](LICENSE). Ao enviar uma
+O Companify é distribuído sob a [GNU AGPL 3.0](LICENSE). Ao enviar uma
 contribuição, você concorda em licenciá-la nos mesmos termos.

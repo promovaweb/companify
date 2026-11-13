@@ -19,7 +19,7 @@
 
 <p align="center">
   <a href="https://github.com/promovaweb/companify/releases/latest"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/promovaweb/companify"></a>
-  <a href="https://github.com/promovaweb/companify/blob/main/LICENSE"><img alt="Licença" src="https://img.shields.io/github/license/promovaweb/companify"></a>
+  <a href="LICENSE"><img alt="Licença" src="https://img.shields.io/github/license/promovaweb/companify"></a>
 </p>
 
 <p align="center">
@@ -230,4 +230,5 @@ Quer usar o Companify em projetos de verdade, com acompanhamento? Conheça os
 
 ## Licença
 
-[MIT](https://github.com/promovaweb/companify/blob/main/LICENSE).
+Distribuído sob a [GNU AGPL 3.0](LICENSE). A licença não concede o uso do
+nome e do logo do Companify nem da marca Promovaweb (AGPL 3.0, seção 7, item e).
