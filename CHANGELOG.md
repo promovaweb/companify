@@ -4,6 +4,16 @@ Todas as mudanças relevantes deste projeto são documentadas neste arquivo.
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-11-13
+
+### Changed
+
+- README reorganizado para quem usa, com cabeçalho da Promovaweb, Discord,
+  documentação, planos e os repositórios usados pelo Companify.
+- `CONTRIBUTING.md` criado para quem contribui, com ambiente, organização do
+  código, validação, commits e releases.
+- Edição v0.2.1 do PDF e do EPUB, compilada das páginas atuais de `docs/`.
+
 ### Added
 
 - Tradução inline de jargão nos worksheets/canvas (ICP, TAM/SAM/SOM,
@@ -81,5 +91,6 @@ Todas as mudanças relevantes deste projeto são documentadas neste arquivo.
   (registro `DEC-NNN` virou `ESC-NNN`), `evidência`/`evidências` virou
   `comprovação`/`comprovações`.
 
+[0.2.1]: https://github.com/promovaweb/companify/releases/tag/v0.2.1
 [0.2.0]: https://github.com/promovaweb/companify/releases/tag/v0.2.0
 [0.1.0]: https://github.com/promovaweb/companify/releases/tag/v0.1.0
