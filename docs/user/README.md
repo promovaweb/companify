@@ -1,16 +1,16 @@
 # Guia completo do usuário
 
-Uma empresa costuma começar com raciocínio espalhado: uma tese de negócio na
+No começo de uma empresa, o raciocínio fica espalhado: uma tese de negócio na
 cabeça do fundador, uma planilha financeira otimista, um roadmap de produto
-sem hipótese registrada e nenhum lugar único que junte tudo isso. O Companify
+sem suposição registrada e nenhum lugar único que junte tudo isso. O Companify
 reúne esse raciocínio, conduz um conselho executivo virtual pelas análises que
-ainda faltam e grava um plano de negócio que pessoas e agentes conseguem
-consultar antes de tomar a próxima escolha.
+ainda faltam e grava um plano de negócio que você, os sócios e os agentes
+consultam antes da próxima escolha.
 
 O Companify é uma biblioteca de skills para agentes. Ele não substitui a
-conversa com sócios, investidores, contador ou advogado. As skills ajudam a
-separar fato de hipótese, comparar alternativas, produzir artefatos
-repetíveis e mostrar o que ainda depende de comprovação.
+conversa com sócios, investidores, contador ou advogado. As skills separam
+fato de suposição e comparam alternativas. Elas também produzem artefatos
+repetíveis e mostram o que ainda depende de comprovação.
 
 ## Leia online ou como parte do ebook
 
@@ -25,10 +25,10 @@ feita aqui entra nas duas edições no próximo build.
 A [pasta dos ebooks](../../ebooks/) registra a edição vigente, os artefatos
 publicados e os hashes em `build.json`.
 
-## Atalho para quem não quer aprender a arquitetura primeiro
+## Atalho para começar sem estudar a arquitetura
 
-Se você não conhece o Companify e só quer um primeiro plano rápido, pule o
-percurso completo abaixo e use `$companify-assistente`: uma conversa em
+Para um primeiro plano rápido, sem conhecer o Companify, pule o percurso
+completo abaixo e use `$companify-assistente`: uma conversa em
 linguagem simples, sem jargão, que já roda a instalação nos bastidores.
 Volte para o percurso completo quando quiser profundidade em uma área
 específica ou passar pela esteira inteira.
@@ -62,10 +62,9 @@ plausível.
 ## O resultado no repositório
 
 Ao final, o projeto consumidor mantém a origem do trabalho em `.companify/`
-e os artefatos utilizáveis em `company/`. Um conjunto completo contém
-estratégia, mercado, modelo de negócio, produto, tecnologia, marketing,
-receita, finanças, operações, pessoas, ameaças, roadmap e o plano de negócio
-consolidado.
+e os artefatos utilizáveis em `company/`. Um conjunto completo tem um
+documento por área do negócio (da estratégia e do mercado às finanças, às
+operações e às ameaças), além do roadmap e do plano de negócio consolidado.
 
 O relatório `.companify/reviews/YYYY-MM-DD-audit.md` fecha o percurso ao
 confrontar o plano com os artefatos produzidos. A aprovação automática não

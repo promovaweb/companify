@@ -3,24 +3,21 @@
 ## Módulos complementares
 
 Brandfy e Companify operam como módulos complementares. O Brandfy resolve a
-marca (propósito, missão, visão, valores, público, posicionamento,
-personalidade, voz, naming, identidade visual, aplicações); o Companify
-resolve a empresa (estratégia empresarial, mercado, modelo de negócio,
-produto, tecnologia, marketing, vendas, finanças, operações, pessoas,
-ameaças e plano de negócio), consumindo o contexto de marca como entrada
-compartilhada.
+marca, do propósito e do posicionamento à voz e à identidade visual. O
+Companify resolve a empresa, da estratégia e do mercado às finanças e ao
+plano de negócio. Ele lê os arquivos de marca como entrada compartilhada.
 
 ## O que o Companify consome, sem reescrever
 
-O Companify lê os artefatos já aprovados pelo Brandfy sempre que
-disponíveis: `.brandfy/config.yaml`, `.brandfy/brief.md`,
-`.brandfy/interview-summary.md`, `brand/strategy.md`, `brand/voice.md`,
-`brand/manual.md`. Esses documentos nunca são reescritos silenciosamente
-por uma skill `companify-*`.
+Quando existem, o Companify lê os artefatos já aprovados pelo Brandfy:
+`.brandfy/config.yaml`, `.brandfy/brief.md`,
+`.brandfy/interview-summary.md`, `brand/strategy.md`, `brand/voice.md` e
+`brand/manual.md`. Nenhuma skill `companify-*` reescreve esses documentos em
+silêncio.
 
 `companify-cmo` é o maior consumidor: ele traduz posicionamento, promessa e
-personalidade em posicionamento comercial, mas nunca inventa uma nova
-personalidade ou posicionamento porque acredita que converteria melhor.
+personalidade em posicionamento comercial, sem inventar uma nova
+personalidade ou posicionamento por achar que converteria melhor.
 
 ## Quando uma análise entra em conflito com a marca
 
@@ -47,8 +44,8 @@ Escolha pendente.
 ```
 
 O registro entra em `.companify/escolhas.md` e a mudança de estratégia de
-marca é encaminhada à skill `brandfy-*` correspondente, tipicamente
-`brandfy-estrategia`. O Companify nunca aplica a mudança diretamente em
+marca é encaminhada à skill `brandfy-*` correspondente, em geral
+`brandfy-estrategia`. O Companify não aplica a mudança diretamente em
 `.brandfy/` ou `brand/`.
 
 ## Quando o Brandfy ainda não existe

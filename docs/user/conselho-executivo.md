@@ -32,16 +32,16 @@ pelo CEO vão para `$companify-board`.
 
 ## CPO: estratégia de produto
 
-`companify-cpo` diferencia necessidade, solução, feature, produto,
-experimento e aposta antes de escrever qualquer seção do artefato. O
-roadmap liga cada item a uma hipótese ou métrica, nunca a "porque parece uma
-boa ideia".
+Antes de escrever qualquer seção do artefato, `companify-cpo` separa
+necessidade de solução, feature de produto e experimento de aposta. O
+roadmap liga cada item a uma suposição registrada ou a uma métrica, em vez de
+"porque parece uma boa ideia".
 
 ## CTO: estratégia tecnológica
 
 `companify-cto` trabalha no nível estratégico, não na especificação de
 software: identifica o que é diferencial competitivo, o que é commodity, o
-que deve ser construído ou comprado, e se a arquitetura atende o estágio
+que deve ser construído ou comprado. Também avalia se a arquitetura atende o estágio
 real da empresa registrado em `.companify/config.yaml`.
 
 ## CMO: marketing a partir da marca
@@ -62,9 +62,9 @@ pelo CFO.
 ## CFO: consequências financeiras
 
 `companify-cfo` classifica cada número como `REALIZADO`, `CONTRATADO`,
-`ESTIMADO`, `PREMISSA` ou `CENÁRIO`, constrói os três cenários (conservador,
-base, agressivo) quando há incerteza material e calcula unit economics
-quando aplicável.
+`ESTIMADO`, `PREMISSA` ou `CENÁRIO`. Quando há incerteza material, constrói
+os três cenários (conservador, base e agressivo) e, quando o modelo permite,
+calcula unit economics.
 
 ## COO: capacidade operacional
 
@@ -74,19 +74,16 @@ volume atual.
 
 ## CHRO: arquitetura humana
 
-`companify-chro` compara a equipe atual com a equipe necessária para
+`companify-chro` compara o quadro atual de pessoas com o quadro necessário para
 executar `company/strategy.md`, prioriza papéis pela entrega real que fica
 impedida sem eles e condiciona a sequência de contratação ao orçamento
 disponível.
 
 ## Ameaças: exposição empresarial
 
-`companify-ameacas` varre as categorias estratégica, de mercado, de
-produto, tecnológica, financeira, operacional, de pessoas, de fornecedor,
-regulatória, jurídica, de segurança, de privacidade, de reputação e de
-concentração, e exige de cada ameaça registrada uma resposta à pergunta:
-como saberíamos que isso está começando a acontecer, antes de já ter
-acontecido?
+`companify-ameacas` varre catorze categorias de ameaça, da estratégica e de
+mercado à regulatória, de privacidade, de reputação e de concentração. Para cada ameaça registrada, ele exige o
+sinal que mostra o problema começando a acontecer, a tempo de agir.
 
 ## Matriz de colaboração executiva
 

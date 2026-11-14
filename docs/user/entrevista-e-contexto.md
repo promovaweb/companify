@@ -3,11 +3,12 @@
 ## Descoberta progressiva, não questionário fixo
 
 `$companify-interview` não aplica as cerca de 70 perguntas possíveis de uma
-vez. Ele lê o Company Context atual, identifica quais dimensões têm campo em
-branco (origem da ideia, problema, solução, público, cliente, produto,
-diferenciais, concorrência, modelo atual, receita, custos, canais, operação,
-tecnologia, equipe, recursos, objetivos, restrições, ameaças, comprovações)
-e prioriza as perguntas que alteram significativamente o negócio.
+vez. Ele lê o Company Context atual, identifica as dimensões com campo em
+branco e prioriza as perguntas que alteram o negócio de forma relevante. As
+dimensões vão da origem da ideia, do problema e da solução ao público, aos
+diferenciais e à concorrência, passando por receita, custos, canais,
+operação, tecnologia, pessoas, recursos, objetivos, restrições, ameaças e
+comprovações.
 
 Uma empresa em estágio `idea` precisa de profundidade em
 problema/solução/público. Uma empresa em `growth` precisa de profundidade em
@@ -21,7 +22,7 @@ Cada resposta entra em `.companify/interview.md` classificada como `FATO`,
 `HIPÓTESE` ou `PREMISSA`, antes de atualizar
 `.companify/company-context.md` com as respostas confirmadas.
 
-Nunca invente uma resposta para completar o Company Context. Um campo sem
+Não invente uma resposta para completar o Company Context. Um campo sem
 informação permanece em branco com a pergunta registrada: o Context Gate de
 `$companify-builder` depende dessa honestidade para decidir se a esteira
 pode avançar.

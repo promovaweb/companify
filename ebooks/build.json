@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "version": "0.3.0",
-  "edition": "v0.3.0",
-  "generated_at": "2026-11-13T21:29:32.760862Z",
-  "source_sha256": "3b2853da6a26a2ba4b20b2445307debaac644c55ce6bf6037a3905578980fbc5",
+  "version": "0.3.1",
+  "edition": "v0.3.1",
+  "generated_at": "2026-11-14T14:27:42.176000Z",
+  "source_sha256": "0915f6046c836e204fd12ed82543b6fbc3b93410441e31e08afc9dc9d2c204c7",
   "sources": [
     "brand/logo/png/icon-192w.png",
     "docs/develop/arquitetura.md",
@@ -40,12 +40,12 @@
   ],
   "artifacts": {
     "pdf": {
-      "file": "Companify-Documentacao-Completa-v0.3.0.pdf",
-      "sha256": "591369ca5122e4b51e1dcf838dc218647e47d6d35754a9c81d66b44ba2f9b18e"
+      "file": "Companify-Documentacao-Completa-v0.3.1.pdf",
+      "sha256": "f91b3695a855d7665f6639296bd854577a20c3579ad6a5ee8017af09ca986e79"
     },
     "epub": {
-      "file": "Companify-Documentacao-Completa-v0.3.0.epub",
-      "sha256": "41772be7c1d28e4b7b07b8160ed534d74982bce0d2750db89c676701ac606554"
+      "file": "Companify-Documentacao-Completa-v0.3.1.epub",
+      "sha256": "a404d6044fee6a6ac6ebb939c3c08830572c24c8f2abca4c52059e22c4c5d498"
     }
   }
 }

@@ -20,7 +20,7 @@ mesma seção quanto à ausência do próprio arquivo.
 | Marketing | Os canais fazem sentido para o ICP definido? |
 | Receita | Pricing e modelo comercial são coerentes com o modelo de negócio e com a marca? |
 | Operação | A empresa consegue entregar o que vende, dado `company/people.md` e `company/operations.md`? |
-| Pessoas | Existe capacidade humana para executar o roadmap sem depender de uma pessoa não identificada? |
+| Pessoas | Existe capacidade humana, com pessoas identificadas, para executar o roadmap? |
 | Marca | O plano contradiz alguma escolha aprovada pelo Brandfy sem registro de tensão? |
 | Ameaças | As ameaças críticas possuem mitigação e plano de contingência? |
 
@@ -35,7 +35,7 @@ PASSED WITH PENDING ITEMS
 FAILED
 ```
 
-Cada achado é classificado por impacto, probabilidade e reversibilidade, e
+Cada achado é classificado por impacto, probabilidade e reversibilidade. Também é ordenado
 por severidade: impedimento de publicação, correção necessária, melhoria
 recomendada ou observação. Nem todo achado impede o uso do plano.
 

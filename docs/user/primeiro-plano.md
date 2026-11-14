@@ -13,11 +13,11 @@ Use $companify-builder para construir o plano de negócio do zero.
 para a seguinte enquanto o gate correspondente tiver item pendente sem
 justificativa registrada.
 
-## Fase 1: contexto
+## Fase 1: diagnóstico da empresa
 
-O builder usa `$companify-setup`, carrega o contexto Brandfy quando
+O builder usa `$companify-setup`, carrega os arquivos do Brandfy quando
 `.brandfy/config.yaml` e `brand/strategy.md` existem, detecta o estágio da
-empresa e os documentos já existentes em `company/`, e conduz
+empresa e os documentos já existentes em `company/`. Depois conduz
 `$companify-interview` enquanto o Company Context tiver lacuna relevante.
 
 A fase termina no **Context Gate**:
@@ -50,9 +50,9 @@ no **Viability Gate**:
 Os nove especialistas trabalham sobre o mesmo Company Context:
 `$companify-ceo`, `$companify-cpo`, `$companify-cto`, `$companify-cmo`,
 `$companify-cro`, `$companify-cfo`, `$companify-coo`, `$companify-chro` e
-`$companify-ameacas`. Eles não dependem sequencialmente uns dos outros, mas
-cada um lê os artefatos que os demais já publicaram em `company/`. Veja o
-detalhe de cada papel em [conselho executivo](conselho-executivo.md).
+`$companify-ameacas`. Eles não seguem uma ordem fixa, mas cada um lê os
+artefatos que os demais já publicaram em `company/`, conforme o detalhe de
+cada papel em [conselho executivo](conselho-executivo.md).
 
 Em seguida, `$companify-board` confronta as análises, resolve conflitos e
 registra escolhas em `.companify/escolhas.md`; veja
@@ -74,9 +74,9 @@ Alignment Gate**:
 ## Fase 4: consolidação
 
 `$companify-business-plan` consolida `company/business-plan.md` e
-`company/roadmap.md`; veja [plano de negócio](plano-de-negocio.md). Depois,
-`$companify-audit` revisa o resultado; veja [auditoria](auditoria.md). A
-fase termina no **Business Plan Gate**:
+`company/roadmap.md` ([plano de negócio](plano-de-negocio.md)). Depois,
+`$companify-audit` revisa o resultado ([auditoria](auditoria.md)). A fase
+termina no **Business Plan Gate**:
 
 ```text
 [ ] plano consolidado

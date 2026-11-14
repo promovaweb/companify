@@ -65,7 +65,7 @@ precisa ser corrigido pela skill responsável antes de nova auditoria. Não
 edite o relatório para mudar o veredito; corrija o artefato e rode
 `$companify-audit` novamente.
 
-## Dados para um relato de falha
+## O que incluir num relato de falha
 
 Inclua a versão do Node.js, o sistema operacional, o caminho da skill, o
 comando executado, a mensagem completa e a lista dos arquivos esperados.

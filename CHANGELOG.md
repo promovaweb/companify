@@ -4,6 +4,17 @@ Todas as mudanças relevantes deste projeto são documentadas neste arquivo.
 
 ## [Unreleased]
 
+## [0.3.1] - 2026-11-13
+
+### Changed
+
+- O guia do usuário passou a ser publicado em
+  <https://promovaweb.com/docs/companify/>. O botão Documentação do cabeçalho
+  e a seção Documentação do README apontam para essa página.
+- Copy do guia do usuário revisada sob o contrato editorial da Promovaweb,
+  com o título da fase 1 trocado e frases reescritas sem os termos vetados.
+- Edição v0.3.1 do PDF e do EPUB, compilada das páginas atuais de `docs/`.
+
 ## [0.3.0] - 2026-11-13
 
 ### Changed

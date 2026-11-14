@@ -3,22 +3,23 @@
 ## O que o Board faz
 
 `$companify-board` confronta as análises executivas em vez de produzir mais
-uma análise isolada. Ele procura especificamente: conflitos entre áreas,
-premissas incompatíveis, dependências não declaradas, escolhas sem
-comprovação, otimização local (uma área melhora à custa de outra sem que
-isso fique explícito), ameaças ignoradas, metas incompatíveis e
-inconsistências entre documentos de `company/`.
+uma análise isolada. Ele procura três grupos de problema:
 
-A pergunta central do Board é: essas respostas continuam coerentes quando
-analisadas juntas? Cada C-level otimiza uma função diferente por desenho; o
+- conflitos entre áreas, premissas incompatíveis e metas que não cabem juntas;
+- dependências não declaradas, escolhas sem comprovação e ameaças ignoradas;
+- otimização local (uma área avança à custa de outra sem que isso fique
+  explícito) e inconsistências entre documentos de `company/`.
+
+O Board confere se essas respostas continuam coerentes quando analisadas
+juntas. Cada C-level otimiza uma função diferente por desenho. O
 valor do Board está em não deixar nenhuma dessas funções silenciada. Uma
 recomendação que elimina toda tensão sem comprovação nova é suspeita:
 normalmente significa que uma área foi ignorada, não conciliada.
 
 ## O que evitar
 
-O Board nunca simula uma reunião teatral com diálogos artificiais entre
-personagens:
+O Board registra conclusões, sem simular uma reunião teatral com diálogos
+artificiais entre personagens:
 
 ```text
 CEO: Acho que devemos crescer.
@@ -78,7 +79,8 @@ Reavaliar após 30 dias.
 ## O registro `ESC-NNN`
 
 Cada escolha relevante do conselho recebe uma entrada `ESC-NNN` em
-`.companify/escolhas.md`, numerada sequencialmente e nunca reaproveitada:
+`.companify/escolhas.md`, numerada em sequência e sem reaproveitamento de
+número:
 
 ```markdown
 ## ESC-001 — Modelo de cobrança inicial

@@ -2,9 +2,9 @@
 
 ## Processo e resultado
 
-O Companify separa o material de raciocínio dos artefatos aprovados. Essa
-separação permite que uma entrevista registre uma hipótese sem apresentá-la
-no plano de negócio como definição final.
+O Companify separa o material de raciocínio dos artefatos aprovados. Com essa
+separação, a entrevista registra uma suposição ainda não testada sem
+apresentá-la no plano de negócio como definição final.
 
 | Caminho | Conteúdo | Pode ser publicado |
 | --- | --- | --- |
@@ -34,10 +34,10 @@ ESCOLHA
 PENDÊNCIA
 ```
 
-Uma hipótese nunca aparece no plano final como se fosse fato confirmado. Um
-número sem comprovação disponível vira premissa explícita, com cenário
-conservador, base e agressivo, em vez de um valor único apresentado como
-certeza.
+O plano final mostra cada item marcado como `HIPÓTESE` com essa marca, sem
+tratá-lo como fato confirmado. Um número sem comprovação disponível vira
+premissa explícita com três cenários (conservador, base e agressivo), em vez
+de um valor único apresentado como certeza.
 
 ## Estágios da empresa
 
@@ -51,15 +51,16 @@ tração e pode avançar mais rápido pelas etapas de descoberta.
 ## O documento central: o Company Context
 
 `.companify/company-context.md` oferece a todas as skills a mesma visão da
-empresa: empresa, fundadores, problema, solução, cliente, oferta, receita,
-tração, aquisição, operação, tecnologia, objetivos, restrições, contexto
-Brandfy, premissas e pendências. Nenhuma skill mantém uma versão própria e
+empresa. O arquivo reúne a empresa e os fundadores, o problema, a solução e o
+cliente, a oferta, a receita, a tração e a aquisição, a operação e a
+tecnologia, além dos objetivos, das restrições, do material do Brandfy, das
+premissas e das pendências. Nenhuma skill mantém uma versão própria e
 divergente da empresa; todas leem o mesmo arquivo antes de trabalhar.
 
 ## As quatro fases
 
-O fluxo completo percorre contexto, viabilidade, alinhamento executivo e
-consolidação. Cada fase termina em um gate e produz uma fonte que a próxima
+O fluxo completo percorre diagnóstico da empresa, viabilidade, alinhamento
+executivo e consolidação. Cada fase termina em um gate e produz uma fonte que a próxima
 fase consegue ler; veja o percurso completo em
 [primeiro plano de negócio](primeiro-plano.md).
 

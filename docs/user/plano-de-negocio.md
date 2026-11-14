@@ -50,8 +50,8 @@ correspondente:
 `company/roadmap.md` é um artefato-irmão do plano, consolidado a partir dos
 roadmaps setoriais que CPO, CTO, CMO, CRO, COO, CHRO e CFO já registram nas
 próprias seções. Os horizontes podem ser `Agora / Próximo / Depois` ou
-`0–3 meses / 3–12 meses / 12–36 meses`, cobrindo produto, tecnologia,
-marketing, vendas, operação, pessoas e finanças.
+`0–3 meses / 3–12 meses / 12–36 meses` e cobrem todas as áreas desses
+roadmaps.
 
 ## Plano de 90 dias
 
@@ -67,7 +67,7 @@ simultâneas: um plano que tenta tudo não prioriza nada.
 
 ## Atualização contínua
 
-`company/business-plan.md` não é um documento estático criado uma única vez:
-é uma fotografia do negócio em determinada data. Cada revisão informa
-versão, data, mudanças relevantes, novas comprovações, premissas
-invalidadas e escolhas alteradas no topo do arquivo.
+`company/business-plan.md` registra o negócio numa data e muda a cada
+revisão. No topo do arquivo, cada revisão informa versão, data e mudanças
+relevantes, com as novas comprovações, as premissas invalidadas e as
+escolhas alteradas.

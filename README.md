@@ -27,7 +27,7 @@
 </p>
 
 <p align="center">
-  <a href="https://promovaweb.com/docs/">Documentação</a> ·
+  <a href="https://promovaweb.com/docs/companify/">Documentação</a> ·
   <a href="https://promovaweb.com/discord">Discord</a> ·
   <a href="https://promovaweb.com/planos?utm_source=github&utm_medium=readme&utm_campaign=companify">Planos da Promovaweb</a> ·
   <a href="https://github.com/promovaweb/companify/blob/main/CHANGELOG.md">Changelog</a>
@@ -180,9 +180,9 @@ As demais skills gravam os próprios artefatos em `company/`.
 
 ## Documentação
 
-A documentação dos projetos da Promovaweb fica em
-[promovaweb.com/docs](https://promovaweb.com/docs/). O manual do Companify
-acompanha o repositório:
+O guia do usuário do Companify é publicado em
+[promovaweb.com/docs/companify](https://promovaweb.com/docs/companify/). O
+manual completo também acompanha o repositório:
 
 - [Guia do usuário](https://github.com/promovaweb/companify/blob/main/docs/user/README.md):
   instalação, conceitos, primeiro plano, entrevista, conselho executivo,

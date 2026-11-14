@@ -14,8 +14,8 @@ Abra o terminal na raiz do projeto que receberá o plano de negócio e execute:
 npx skills add promovaweb/companify
 ```
 
-O comando instala o catálogo completo das 18 skills. O destino pode variar
-conforme o agente escolhido, e a origem, o caminho e o hash de cada skill
+O comando instala o catálogo completo das 18 skills, num destino que varia
+conforme o agente escolhido. A origem, o caminho e o hash de cada skill
 ficam registrados em `skills-lock.json` do projeto consumidor.
 
 Para listar o catálogo remoto antes de instalar, ou instalar apenas parte
@@ -37,8 +37,8 @@ node <caminho-da-skill-instalada>/companify-setup/scripts/setup.mjs --project .
 O setup cria `.companify/`, prepara `company/` e inclui um bloco delimitado
 por `<!-- companify:consumer:start -->` e `<!-- companify:consumer:end -->`
 no `AGENTS.md`. O conteúdo que já existir fora desses marcadores permanece
-intacto. O script cria somente arquivos e diretórios ausentes; ele nunca
-sobrescreve `.companify/` ou `company/` já preenchidos.
+intacto. O script cria somente arquivos e diretórios ausentes, sem
+sobrescrever `.companify/` ou `company/` já preenchidos.
 
 Os arquivos criados são:
 
@@ -66,8 +66,8 @@ node <caminho-da-skill-instalada>/companify-setup/scripts/setup.mjs --project . 
 
 O segundo comando comprova a idempotência e informa qualquer arquivo ou
 diretório obrigatório que esteja ausente, ou um bloco do `AGENTS.md`
-desatualizado. Abra o diff do Git antes de avançar para confirmar que a
-escrita ficou restrita aos caminhos previstos.
+desatualizado. Confira as alterações no Git para confirmar que a escrita
+ficou restrita aos caminhos previstos e só então avance.
 
 ## Preencha a configuração
 
@@ -92,7 +92,7 @@ paths:
 
 Os estágios possíveis são `idea`, `validation`, `pre-revenue`,
 `early-revenue`, `growth`, `scale` e `established`. O estágio orienta
-diretamente decisões técnicas de outras skills, como a profundidade da
+diretamente escolhas técnicas de outras skills, como a profundidade da
 entrevista em `$companify-interview` e a arquitetura recomendada por
 `$companify-cto`.
 
@@ -101,7 +101,7 @@ entrevista em `$companify-interview` e a arquitetura recomendada por
 Quando o Company Context ainda tiver lacunas relevantes, comece com
 `$companify-interview`. Quando o objetivo for construir o plano completo do
 zero, use `$companify-builder`, que orquestra a esteira inteira e os quatro
-gates. Um pedido de escopo menor pode chamar a especialidade correspondente
+gates. Uma tarefa de escopo menor pode chamar a especialidade correspondente
 diretamente, por exemplo:
 
 ```text
@@ -109,7 +109,7 @@ Use $companify-cfo para modelar o financeiro a partir do modelo de negócio já
 aprovado.
 ```
 
-Quando a tarefa criar ou alterar uma marca, e não a empresa, use as skills
-`brandfy-*` em vez do Companify. As duas bibliotecas compartilham contexto,
+Quando a tarefa criar ou alterar uma marca em vez da empresa, use as skills
+`brandfy-*` em vez do Companify. As duas bibliotecas leem os mesmos arquivos,
 mas cada uma preserva os artefatos aprovados pela outra; veja
 [relação com o Brandfy](relacao-com-brandfy.md).
