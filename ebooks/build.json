@@ -1,20 +1,31 @@
 {
   "schema_version": 1,
-  "version": "0.3.1",
-  "edition": "v0.3.1",
-  "generated_at": "2026-11-14T14:27:42.176000Z",
-  "source_sha256": "0915f6046c836e204fd12ed82543b6fbc3b93410441e31e08afc9dc9d2c204c7",
+  "version": "0.3.2",
+  "edition": "v0.3.2",
+  "generated_at": "2026-11-22T22:25:37.468317Z",
+  "source_sha256": "a486d6ef845fb6cfce34a55a358ec81fb444809670ce64d92a9b6bb3f257e833",
   "sources": [
+    ".ebook/build-ebook.sh",
+    ".ebook/epub.css",
+    ".ebook/external-links.lua",
+    ".ebook/fonts/OFL-Inter.txt",
+    ".ebook/fonts/OFL-Manrope.txt",
+    ".ebook/fonts/inter-latin.woff2",
+    ".ebook/fonts/manrope-latin.woff2",
+    ".ebook/metadata.yaml",
+    ".ebook/pdf.css",
+    ".ebook/template.html",
     "brand/logo/png/icon-192w.png",
+    "docs/README.md",
+    "docs/develop/README.md",
     "docs/develop/arquitetura.md",
     "docs/develop/artefatos.md",
     "docs/develop/contrato-das-skills.md",
     "docs/develop/contribuicao.md",
-    "docs/develop/README.md",
     "docs/develop/testes.md",
     "docs/reading-order.txt",
-    "docs/README.md",
     "docs/specification.md",
+    "docs/user/README.md",
     "docs/user/auditoria.md",
     "docs/user/board-e-escolhas.md",
     "docs/user/conceitos.md",
@@ -23,29 +34,18 @@
     "docs/user/instalacao.md",
     "docs/user/plano-de-negocio.md",
     "docs/user/primeiro-plano.md",
-    "docs/user/README.md",
     "docs/user/relacao-com-brandfy.md",
     "docs/user/solucao-de-problemas.md",
-    ".ebook/build-ebook.sh",
-    ".ebook/epub.css",
-    ".ebook/external-links.lua",
-    ".ebook/fonts/inter-latin.woff2",
-    ".ebook/fonts/manrope-latin.woff2",
-    ".ebook/fonts/OFL-Inter.txt",
-    ".ebook/fonts/OFL-Manrope.txt",
-    ".ebook/metadata.yaml",
-    ".ebook/pdf.css",
-    "ebooks/VERSION",
-    ".ebook/template.html"
+    "ebooks/VERSION"
   ],
   "artifacts": {
     "pdf": {
-      "file": "Companify-Documentacao-Completa-v0.3.1.pdf",
-      "sha256": "f91b3695a855d7665f6639296bd854577a20c3579ad6a5ee8017af09ca986e79"
+      "file": "Companify-Documentacao-Completa-v0.3.2.pdf",
+      "sha256": "95458de873177db460d02e417cffe550249425098513c6a5b41fac10879c0c4d"
     },
     "epub": {
-      "file": "Companify-Documentacao-Completa-v0.3.1.epub",
-      "sha256": "a404d6044fee6a6ac6ebb939c3c08830572c24c8f2abca4c52059e22c4c5d498"
+      "file": "Companify-Documentacao-Completa-v0.3.2.epub",
+      "sha256": "134d8f2b7c568477c1ba2cc1b7f2c2a19091ec13f0a4f6fd58f6915f1e99a70f"
     }
   }
 }

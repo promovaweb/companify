@@ -2,6 +2,10 @@
 
 Todas as mudanças relevantes deste projeto são documentadas neste arquivo.
 
+## [0.3.2] - 2026-11-22
+
+- Documenta a atualização das tarefas do ClickUp para pronto após o commit e publicado após o push.
+
 ## [Unreleased]
 
 ## [0.3.1] - 2026-11-13
