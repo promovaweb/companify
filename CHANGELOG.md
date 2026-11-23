@@ -2,6 +2,10 @@
 
 Todas as mudanças relevantes deste projeto são documentadas neste arquivo.
 
+## [0.3.3] - 2026-11-22
+
+- Atualiza a identidade visual do projeto e sua apresentação no README.
+
 ## [0.3.2] - 2026-11-22
 
 - Documenta a atualização das tarefas do ClickUp para pronto após o commit e publicado após o push.

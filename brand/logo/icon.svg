@@ -1,15 +1,5 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description">
-  <title id="title">Ícone principal do Companify</title>
-  <desc id="description">Nove nós em círculo sobre uma placa navy, um centro âmbar cercado por oito pontos claros, representando o conselho executivo.</desc>
-  <rect width="512" height="512" rx="112" fill="#12213E"/>
-  <circle cx="256" cy="256" r="150" fill="none" stroke="#2C4569" stroke-width="4"/>
-  <circle cx="256" cy="106" r="21" fill="#F5F5F0"/>
-  <circle cx="362.07" cy="149.93" r="21" fill="#F5F5F0"/>
-  <circle cx="406" cy="256" r="21" fill="#F5F5F0"/>
-  <circle cx="362.07" cy="362.07" r="21" fill="#F5F5F0"/>
-  <circle cx="256" cy="406" r="21" fill="#F5F5F0"/>
-  <circle cx="149.93" cy="362.07" r="21" fill="#F5F5F0"/>
-  <circle cx="106" cy="256" r="21" fill="#F5F5F0"/>
-  <circle cx="149.93" cy="149.93" r="21" fill="#F5F5F0"/>
-  <circle cx="256" cy="256" r="40" fill="#C9922B"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64" role="img" aria-label="Companify">
+  <title>Companify</title>
+  <desc>Sede de uma empresa com torre de escritórios, ala lateral e entrada em âmbar.</desc>
+  <rect width="64" height="64" rx="12" fill="#12213E"/><g fill="none" stroke-linejoin="round" stroke-linecap="round"><path stroke="#F5F5F0" stroke-width="3.6" d="M8 54h48M12 53V10h27v43m1-27h12v27"/><path fill="#C9922B" d="M18 17h5v6h-5zm10 0h5v6h-5zm-10 11h5v6h-5zm10 0h5v6h-5zm-7 14h9v10h-9z"/><path stroke="#F5F5F0" stroke-width="2.8" d="M45 33h2m-2 8h2"/></g>
 </svg>

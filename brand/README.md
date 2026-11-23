@@ -2,10 +2,7 @@
 
 ## Conceito visual
 
-Nove nós em círculo: um centro âmbar cercado por oito pontos, sobre uma placa
-navy. O centro representa a escolha registrada; os oito pontos, os C-levels
-que a discutem antes dela existir. O símbolo não usa a letra inicial do
-nome, para não repetir a fórmula de badge com letra que o Brandfy já usa.
+Sede de uma empresa com torre de escritórios, ala lateral e entrada em âmbar. A cor de identificação é `#C9922B`.
 
 ## Paleta essencial
 

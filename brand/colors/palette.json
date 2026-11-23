@@ -1,4 +1,9 @@
 {
+  "projectColor": {
+    "name": "Âmbar",
+    "hex": "#C9922B",
+    "meaning": "As janelas acesas e a entrada da sede usam o tom quente da luz de um escritório ocupado."
+  },
   "name": "Companify",
   "families": {
     "primary": {

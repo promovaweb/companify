@@ -8,7 +8,7 @@ Brandfy/Companify e não compete no mercado aberto com esse nome.
 
 ## Logo
 
-O símbolo (nove nós em círculo, um centro âmbar cercado por oito pontos)
+O símbolo (uma sede de empresa com torre de escritórios e ala lateral)
 foi desenhado originalmente para este projeto, sem apropriação de símbolo de
 terceiros. Vetor fonte em [`logo/svg/`](logo/svg/); exportações em
 [`logo/png/`](logo/png/); hashes de integridade em

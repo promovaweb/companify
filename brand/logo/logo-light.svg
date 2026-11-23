@@ -1,17 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 320" role="img" aria-labelledby="title desc">
   <title id="title">Logo do Companify para fundo claro</title>
-  <desc id="desc">Ícone de nove nós e o nome Companify em assinatura horizontal, em navy sobre fundo claro.</desc>
-  <g transform="translate(24 24) scale(.53125)">
-    <circle cx="256" cy="256" r="150" fill="none" stroke="#D9D9D2" stroke-width="4"/>
-    <circle cx="256" cy="106" r="21" fill="#12213E"/>
-    <circle cx="362.07" cy="149.93" r="21" fill="#12213E"/>
-    <circle cx="406" cy="256" r="21" fill="#12213E"/>
-    <circle cx="362.07" cy="362.07" r="21" fill="#12213E"/>
-    <circle cx="256" cy="406" r="21" fill="#12213E"/>
-    <circle cx="149.93" cy="362.07" r="21" fill="#12213E"/>
-    <circle cx="106" cy="256" r="21" fill="#12213E"/>
-    <circle cx="149.93" cy="149.93" r="21" fill="#12213E"/>
-    <circle cx="256" cy="256" r="40" fill="#C9922B"/>
-  </g>
+  <desc id="desc">Sede de uma empresa com torre de escritórios, ala lateral e entrada em âmbar.</desc>
+  <g transform="translate(16 16) scale(4.5)"><g fill="none" stroke-linejoin="round" stroke-linecap="round"><path stroke="#12213E" stroke-width="3.6" d="M8 54h48M12 53V10h27v43m1-27h12v27"/><path fill="#C9922B" d="M18 17h5v6h-5zm10 0h5v6h-5zm-10 11h5v6h-5zm10 0h5v6h-5zm-7 14h9v10h-9z"/><path stroke="#12213E" stroke-width="2.8" d="M45 33h2m-2 8h2"/></g></g>
   <text x="350" y="213" fill="#12213E" font-family="Manrope, Inter, Arial, sans-serif" font-size="130" font-weight="750" letter-spacing="-4">Companify</text>
 </svg>
